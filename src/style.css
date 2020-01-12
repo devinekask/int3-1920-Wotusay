@@ -1,6 +1,7 @@
 @import './css/reset.css';
 @import './css/vars.css';
-@import './css/header.css';
+@import './css/topnav.css';
+@import './css/nav.css';
 
 html {
   height: 100%;
@@ -21,7 +22,6 @@ body {
   font-style: normal;
   height: 100%;
   margin: 0 auto;
-  width: 101.3rem;
 }
 
 .hidden {

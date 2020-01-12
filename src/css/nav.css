@@ -1,0 +1,32 @@
+.nav {
+  background-color: var(--colorGrey);
+
+  & .active {
+    background-color: white;
+    width: 10.5rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .link-active {
+      color: var(--colorRed) !important;
+    }
+  }
+
+  & .menu__item-big {
+    margin-left: 4rem;
+
+    & .menu__link-big {
+      color: var(--colorBlack);
+      font-size: var(--buySize);
+      font-weight: 700;
+      transition: ease-in-out 200ms;
+
+      &:hover {
+        color: var(--colorRed);
+      }
+    }
+  }
+
+}

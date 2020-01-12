@@ -10,7 +10,7 @@ class HumoController extends Controller {
   function __construct() {
     $this->humoDAO = new HumoDAO();
 
-    $this->set('title', 'Humo');
+    $this->set('title', 'Shop');
   }
 
   public function index() {
