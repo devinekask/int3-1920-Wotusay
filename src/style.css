@@ -2,6 +2,7 @@
 @import './css/vars.css';
 @import './css/topnav.css';
 @import './css/nav.css';
+@import './css/footer.css';
 
 html {
   height: 100%;

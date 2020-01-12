@@ -48,7 +48,8 @@
     </main>
     <footer>
       <nav class="footer__nav">
-      <ul class="footer__nav--items"><span class="subtitle__footer">Actua</span>
+      <ul class="footer__nav--items">
+      <li class="title-item"><span class="subtitle__footer">Actua</span></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Nu in humo</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">De columns</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Dossiers</a></li>
@@ -58,7 +59,8 @@
       <li class="footer__nav-item"><a class="footer__nav-link" href="">eerder in humo</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">De eindejaarsvragen</a></li></ul>
 
-      <ul class="footer__nav--items"><span class="subtitle__footer">Humor</span>
+      <ul class="footer__nav--items">
+      <li class="title-item"><span class="subtitle__footer">Humor</span></li>
       <li class="footer__nav-item"><a href="" class="footer__nav-link">fotospecials</a></li>
       <li class="footer__nav-item"><a href="" class="footer__nav-link">cartoons</a></li>
       <li class="footer__nav-item"><a href="" class="footer__nav-link">uitlaat</a></li>
@@ -67,29 +69,31 @@
       <li class="footer__nav-item"><a href="" class="footer__nav-link">humo’s comedy cup</a></li>
       </ul>
 
-      <ul class="footer__nav--items"><span class="subtitle__footer">Muziek</span>
+      <ul class="footer__nav--items">
+      <li class="title-item"><span class="subtitle__footer">Muziek</span></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Concertreviews</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">cd-reviews</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">humo’s rock rally</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">festivaltis</a></li></ul>
 
-      <ul class="footer__nav--items"><span class="subtitle__footer">Boeken</span>
+      <ul class="footer__nav--items">
+      <li class="title-item"><span class="subtitle__footer">Boeken</span></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">reviews</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">fictie</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">non-fictie</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">het leden zoals het is</a></li>
-      <li class="footer__nav-item"><a class="footer__nav-link" href="">de grooste
-schrijver van deze
+      <li class="footer__nav-item"><a class="footer__nav-link" href="">de grooste <br>
+schrijver van deze <br>
 tijd</a></li></ul>
 
       <div class="last__block--wrapper">
-      <ul class="footer__nav--items"><span class="subtitle__footer">Shop</span>
+      <ul class="footer__nav--items">
+      <li class="title-item"><span class="subtitle__footer">Shop</span></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Boeken</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Boeken accessoires</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Agenda</a></li>
-      <li class="footer__nav-item"><a class="footer__nav-link" href="">HUMO-Abonnement</a></li></ul>
-
-      <ul class="footer__nav--items"><span class="subtitle__footer">Ga naar</span>
+      <li class="footer__nav-item"><a class="footer__nav-link" href="">HUMO-Abonnement</a></li>
+      <li class="title-item title-item__last"><span class="subtitle__footer">Ga naar</span></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">Tv/film</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">video</a></li>
       <li class="footer__nav-item"><a class="footer__nav-link" href="">foto’s</a></li>
