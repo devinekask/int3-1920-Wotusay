@@ -1,7 +1,6 @@
 footer {
   border-top: solid 1px var(--colorBlack);
   margin-top: 4.8rem;
-  padding-bottom: 1rem;
 
   & .footer__nav {
     margin-top: 5px;
@@ -54,4 +53,57 @@ footer {
 
 .footer__nav-item {
   margin-top: 1.6rem;
+}
+
+.footer__wrapper {
+  background-color: var(--colorBlack);
+  margin-top: 3.5rem;
+  padding-bottom: 2rem;
+
+  & .general-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+    & p {
+      color: white;
+      font-family: NewsGothicStd;
+      font-size: 15px;
+      margin-right: 65.6rem;
+      margin-left: 2.7rem;
+    }
+
+    & .socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  & .footer__bottom {
+    display: flex;
+    justify-content: center;
+
+    & .footer__bottom-item {
+      margin-top: 3.8rem;
+
+      & .footer-bottom__link {
+        text-decoration: none;
+        color: white;
+        margin-left: 3.2rem;
+        font-family: news-gothic-std, sans-serif;
+        font-size: var(--smallSize);
+        line-height: 1.33;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
