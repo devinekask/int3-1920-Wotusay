@@ -30,3 +30,33 @@
   }
 
 }
+
+.sub-nav__right {
+  font-weight: 700;
+  display: flex;
+
+  & .menu__item {
+
+    & .menu__link {
+      color: black;
+      margin-left: 1.7rem;
+      transition: ease-in-out 200ms;
+
+      &:hover {
+        color: var(--colorRed);
+      }
+    }
+
+    & .first-item {
+      display: flex;
+      color: var(--colorRed);
+      margin-left: 0;
+      width: 8.4rem;
+      transition: ease-in-out 200ms;
+
+      &:hover {
+        color: var(--colorBlack);
+      }
+    }
+  }
+}
