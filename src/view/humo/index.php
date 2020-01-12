@@ -41,20 +41,22 @@
 </ul>
 </div>
 </section>
+<div class="line"></div>
 <div class="book__wrapper">
-<section class="shop-item shop-item__bookbox">
+<section class="shop-boekenbox shop-item__bookbox">
 <h3 class="shop-title shop-title__books">
 BOEKENREEKS
 </h3>
 <img src="assets/img/Boekenreeks.png" alt="boekenreeks" width="397px" height="323">
 <a href="" class="button" >BEKIJK HET AANBOD</a>
 </section>
-<section class="shop-item shop-item__bookbox">
-<h3 class="shop-title shop-title__books">Boeken</h3>
+<section class="shop-boekenreeks shop-item__bookbox">
+<h3 class="shop-title shop-title__boekenreeks">Boeken</h3>
 <img src="assets/img/books.png" alt="books">
 <a href="" class="button">BEKIJK HET AANBOD</a>
 </section>
 </div>
+<div class="line"></div>
 <div class="items__wrapper">
 <ul class="shop-items">
 <li class="shop-item">
