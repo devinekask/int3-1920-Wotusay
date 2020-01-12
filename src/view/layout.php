@@ -6,6 +6,7 @@
   <meta name="author" content="Devine" />
   <meta name="keywords" content="humo, webshop, notreal, shop" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/ktr8mip.css">
 
     <title>Humo - <?php echo $title; ?></title>
     <?php /* NEW */ ?>
@@ -19,12 +20,12 @@
       <li class="menu__item"><a class="menu__link" href="">tv/film</a></li>
       <li class="menu__item highlight"><a class="menu__link" href="">video</a></li>
       <li class="menu__item"><a class="menu__link" href="">tv-gids</a></li>
-      <li class="menu__item"><a class="menu__link" href="">zoekertjes</a></li>
+      <li class="menu__item last-item"><a class="menu__link" href="">zoekertjes</a></li>
       </ul>
       <ul class="menu sub-nav__right">
-        <li><a href="">Nu in humo</a></li>
-        <li><a href="">login</a></li>
-        <li><a href="">Registreer</a></li>
+        <li class="menu__item "><a class="menu__link first-item" href="">Nu in humo</a></li>
+        <li class="menu__item"><a class="menu__link" href="">login</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Registreer</a></li>
       </ul>
       </div>
       <div class="container__header">

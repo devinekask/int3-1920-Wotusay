@@ -1,0 +1,15 @@
+:root {
+  /*Colors*/
+  --colorRed: #ee0a0d;
+  --colorGrey: #f8f8f5;
+  --colorYellow: #ffe40a;
+  --colorBlack: black;
+  --colorDarkerGrey: #535353;
+  /*fontsize*/
+  --bigSize: 6rem;
+  --meduimSize: 3.7rem;
+  --averageSize: 2.7rem;
+  --buySize: 2.5rem;
+  --smallSize: 1.4rem;
+  /*font weight*/
+}
