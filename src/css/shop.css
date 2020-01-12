@@ -1,0 +1,172 @@
+.container {
+  width: 96rem;
+  margin: 0 auto;
+}
+
+.longread {
+  background-color: var(--colorGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  & .longread__title {
+    background-color: var(--colorRed);
+    font-family: news-gothic-std, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 3.7rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    padding: 1rem;
+    margin-right: 58rem;
+    margin-top: 5.2rem;
+    margin-bottom: -3.1rem;
+    z-index: 1;
+  }
+}
+
+.longread__wrapper {
+  margin: 0 auto;
+  width: 96rem;
+  display: flex;
+  border-top: dashed 1px var(--colorDarkerGrey);
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  border-bottom: dashed 1px var(--colorDarkerGrey);
+
+  & img {
+    margin-left: 6rem;
+  }
+
+  & .text__wrapper {
+    margin-left: 5.6rem;
+    width: 36.9rem;
+
+    & .subtitle {
+      color: var(--colorRed);
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    & p {
+      font-size: var(--averageSize);
+      line-height: 1.26;
+    }
+  }
+
+  & .price__button {
+    margin-top: 2.4rem;
+  }
+}
+
+.longread__button {
+  background-color: var(--colorYellow);
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--colorBlack);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27.9rem;
+  height: 4.4rem;
+  font-weight: bold;
+  margin-right: -68.1rem;
+  margin-top: 1.3rem;
+  margin-bottom: 2.1rem;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../assets/img/pijltje.svg);
+    width: 2.7rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    transform: scale(0.8);
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: solid 4px var(--colorGrey);
+
+  & .filter-menu {
+    display: flex;
+
+    & .filter-item {
+      margin-right: 3.2rem;
+
+      & .filter-link {
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 3.65;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--colorBlack);
+        transition: ease-in-out 200ms;
+
+        &:hover {
+          color: var(--colorRed);
+        }
+      }
+
+    }
+  }
+}
+
+.shop-item__abbo {
+  background-color: var(--colorYellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  & .shop-title {
+    margin-top: 3.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  & .img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    & .button {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.information__wrapper {
+  background-color: var(--colorGrey);
+  display: flex;
+  width: 96.2rem;
+
+  & .voordelen {
+    margin-right: 27rem;
+    margin-top: 2.8rem;
+    margin-left: 10.4rem;
+    margin-bottom: 2.4rem;
+
+    & .voordelen-item {
+      font-size: 2rem;
+    }
+  }
+
+  & .prices {
+    margin-top: 2.8rem;
+    margin-right: 6.2rem;
+    margin-bottom: 2.4rem;
+
+    & .prices-item {
+      font-size: 2rem;
+    }
+  }
+}

@@ -2,11 +2,12 @@
 <h1 class="longread__title">Goed boek tip</h1>
 <div class="longread__wrapper">
 <img src="assets/img/neuromancer.png" alt="neuromancer" width="315" height="473">
+<div class="text__wrapper">
 <span class="subtitle">roman</span>
 <p>Neuromancer is een roman uit 1984. Dit boek heeft namelijk voor het eerst de cyberpunk genre uit heeft gehaalt. Dit boek won een aantal prijzen. Zoals de nebula award en de Hugo award.
 </p>
 <a class="price__button" href="">Bestel | €13,50</a>
-</div>
+</div></div>
 <a class="longread__button" href="">Ontdek de longread</a>
 </article>
 <section class="shop">
@@ -19,11 +20,13 @@
   <li class="filter-item"><a class="filter-link" href="">HUMO-Abonnement</a></li>
 </ul>
 </nav>
+<div class="container">
 <section class="shop-item shop-item__abbo">
 <div class="shop__wrapper">
 <h3 class="shop-title">PAPIER & DIGITAAL</h3>
+<div class="img__wrapper">
 <img src="assets/img/papierdigitaal.png" alt="papierdigitaal" width="435" height="372">
-<a class="button" href="">BEKIJK HET AANBOD</a>
+<a class="button" href="">BEKIJK HET AANBOD</a></div>
 </div>
 <div class="information__wrapper">
 <ul class="voordelen">
@@ -125,5 +128,6 @@ BOEKENREEKS
 €12,50</a>
 </li>
 </ul>
+</div>
 </div>
 </section>
