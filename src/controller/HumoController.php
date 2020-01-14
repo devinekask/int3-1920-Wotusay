@@ -9,12 +9,15 @@ class HumoController extends Controller {
 
   function __construct() {
     $this->humoDAO = new HumoDAO();
-
-    $this->set('shopitems',$this->humoDAO->selectAllItems());
-    $this->set('title', 'Shop');
   }
 
   public function index() {
-
+  $this->set('shopitems', $this->humoDAO->selectAllItems());
+  $this->set('title', 'Shop');
 }
+  public function fil() {
+  $this->set('title', 'Filter');
+  $this->set('shopitems', $this->humoDAO->selectAllItems());
+}
+
 }

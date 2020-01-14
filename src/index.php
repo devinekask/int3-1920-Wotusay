@@ -7,6 +7,10 @@ $routes = array(
   'home' => array(
     'controller' => 'Humo',
     'action' => 'index'
+  ),
+  'fil' => array(
+    'controller' => 'Humo',
+    'action' => 'fil'
   )
 );
 

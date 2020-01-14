@@ -4,6 +4,7 @@
 @import './css/nav.css';
 @import './css/footer.css';
 @import './css/shop.css';
+@import './css/filter.css';
 
 html {
   height: 100%;
@@ -87,4 +88,21 @@ body {
 
 .bold {
   font-weight: 700;
+}
+
+.underline__gone {
+  text-decoration: none;
+}
+
+.longread__title {
+  background-color: var(--colorRed);
+  font-family: news-gothic-std, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 3.7rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  padding: 1rem;
+  width: max-content;
 }

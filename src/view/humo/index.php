@@ -64,10 +64,10 @@ BOEKENREEKS
 
 <?php foreach($shopitems as $shopitem):?>
 
-  <li class="shop-item">
-<img src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" width="254" height="229">
-<a class="price__button" href=""><?php echo $shopitem['name']?> |
-€<?php echo $shopitem['price']?></a>
+<li class="shop-item">
+<a class="underline__gone" href=""><img src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" width="254" height="229">
+<p class="price__button"><?php echo $shopitem['name']?> |
+€<?php echo $shopitem['price']?></p></a>
 </li>
 <?php endforeach;?>
 </ul>
