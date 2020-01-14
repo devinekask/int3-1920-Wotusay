@@ -262,10 +262,12 @@
     & .price__button {
       margin-top: 1rem;
       margin-bottom: 1rem;
+      max-width: 28rem;
 
       &::before {
         display: block;
         margin-right: 1rem;
+        min-width: 2.7rem;
       }
     }
   }
