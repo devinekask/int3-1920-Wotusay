@@ -24,9 +24,12 @@ class HumoController extends Controller {
 
   $this->set('shopitems', $products);
   $this->set('title', 'Filter');
-}
-public function detail() {
-  $this->set('title', 'Productinfo');
-}
+  }
+  public function detail() {
+   $this->set('title', 'Productinfo');
+  }
 
+  public function winkelmandje() {
+    $this->set('title', 'winkelmandje');
+  }
 }

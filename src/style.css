@@ -5,6 +5,7 @@
 @import './css/footer.css';
 @import './css/shop.css';
 @import './css/filter.css';
+@import './css/detail.css';
 
 html {
   height: 100%;
@@ -105,4 +106,24 @@ body {
   line-height: normal;
   padding: 1rem;
   width: max-content;
+}
+
+.front {
+  background-image: url(assets/img/Neuromancer-pictureselect.png);
+  min-width: 160px;
+  min-height: 144px;
+  margin-top: 7.2rem;
+  margin-bottom: 7.2rem;
+  background-repeat: no-repeat;
+  margin-left: 25rem;
+}
+
+.back {
+  background-image: url(assets/img/backside.png);
+  min-width: 160px;
+  min-height: 144px;
+  margin-top: 7.2rem;
+  margin-bottom: 7.2rem;
+  background-repeat: no-repeat;
+  margin-left: 6rem;
 }

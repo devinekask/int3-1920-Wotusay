@@ -6,10 +6,12 @@
   --colorBlack: black;
   --colorDarkerGrey: #535353;
   --colorLighterGrey: #979797;
+  --colorGreen: #129321;
   /*fontsize*/
   --bigSize: 6rem;
   --meduimSize: 3.7rem;
   --averageSize: 2.7rem;
+  --basicSize: 2rem;
   --buySize: 2.5rem;
   --smallSize: 1.4rem;
   /*font weight*/
