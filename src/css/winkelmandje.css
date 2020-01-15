@@ -1,0 +1,175 @@
+.voordelen {
+  display: flex;
+
+  & .voordeel {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--colorBlack);
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+    &::before {
+      content: '';
+      background-image: url(../assets/img/check-winkelmandje.svg);
+      width: 1rem;
+      height: 1rem;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.product--info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    margin-left: -9rem;
+    margin-right: 2rem;
+  }
+
+  & .bold {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    max-width: 18.6rem;
+  }
+
+  & .levertijd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    max-width: 16rem;
+    margin-left: 6.4rem;
+    margin-right: 6.4rem;
+  }
+}
+
+.aantal__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-right: 7.4rem;
+  max-height: 10.9rem;
+
+  & label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--smallSize);
+    margin-bottom: 1rem;
+  }
+
+  & select {
+    appearance: none;
+    border: solid 1px;
+    border-radius: 0%;
+    width: 3.4rem;
+    height: 2.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    padding-left: 4px;
+    background-color: white;
+    background-image: url(../assets/img/Triangle.svg);
+    background-repeat: no-repeat;
+    background-position-x: 18px;
+    background-position-y: center;
+  }
+}
+
+.delete {
+  margin-top: 6rem;
+  position: absolute;
+  appearance: none;
+  border: none;
+  color: var(--colorRed);
+  font-size: 1.7rem;
+  margin-left: -1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: '';
+    background-image: url(../assets/img/prullebak.svg);
+    width: 1.4rem;
+    height: 1.6rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+.kortings__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.text_wrapper {
+
+  & span {
+    color: var(--colorRed);
+  }
+
+  & .information {
+    appearance: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--colorRed);
+    color: white;
+    margin-right: 50rem;
+  }
+
+}
+
+.kortingscode__input {
+  border: solid 1px var(--colorRed);
+  width: 16rem;
+  height: 2.6rem;
+  margin-top: 1rem;
+}
+
+.total__wrapper {
+  width: 26.4rem;
+}
+
+.total-text {
+  display: flex;
+  justify-content: space-between;
+
+  & p {
+    margin-bottom: 1rem;
+  }
+}
+
+.green {
+  color: var(--colorGreen);
+  font-weight: bold;
+}
+
+.aantal-mini {
+  font-size: 1.2rem;
+  color: #535353;
+}
+
+.submit-total {
+  display: flex;
+  appearance: none;
+  color: white;
+  width: 26.5rem;
+  height: 4.3rem;
+  border: none;
+  background-color: var(--colorRed);
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.align-right {
+  display: flex;
+  margin-right: -44.5rem;
+}

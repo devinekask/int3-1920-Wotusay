@@ -6,6 +6,7 @@
 @import './css/shop.css';
 @import './css/filter.css';
 @import './css/detail.css';
+@import './css/winkelmandje.css';
 
 html {
   height: 100%;
@@ -126,4 +127,10 @@ body {
   margin-bottom: 7.2rem;
   background-repeat: no-repeat;
   margin-left: 6rem;
+}
+
+.line-full {
+  border: solid 1px black;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }

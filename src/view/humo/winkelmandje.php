@@ -26,9 +26,58 @@ Winkelmandje
   <img src="assets/img/neuromancer-winkelmandje.png" alt="neuromancer" width="117" height="176">
   <p class="bold">Neuromancer - William Gibson - Hardcover</p>
   <p class="levertijd">Op vooraad voor 20:00, morgen in huis</p>
-  <label for="aantal">aantal</label>
-  <select name="aantal" id=""></select>
+  <div class="aantal__wrapper">
+  <label for="aantal">Aantal</label>
+  <select name="aantal" id="hoeveelheid">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="25">25</option>
+  </select>
+  <button class="delete">Verwijderen</button>
+</div>
+  <span class="bold">€12,50</span>
 </div>
 <div class="line-full"></div>
 </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="hidden">Total price</h2>
+    <div class="relevant__wrapper kortings__wrapper">
+      <div class="kortin__wrapper">
+    <div class="text_wrapper">
+      <span>Kortingscode</span>
+      <button class="information">?</button></div>
+      <input type="text" name="kortingscode" id="kortingscode" class="kortingscode__input">
+    </div>
+    <div class="total__wrapper">
+      <div class="total-text">
+      <p>Totaal artikelen <span class="aantal-mini">(1)</span></p>
+      <p class="bold">€12,50</p></div>
+      <div class="total-text">
+      <p>Verzendkosten</p>
+      <p class="green">Gratis</p></div>
+      <div class="total-text">
+      <p>Kortingscode</p>
+      <p class="bold">- €4,50</p></div>
+      <div class="line-full"></div>
+      <div class="total-text">
+      <p class="bold">Totaal</p>
+      <p class="bold">€8,00</p></div>
+      <input class="submit-total" type="submit" value="Verder naar bestelling">
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container align-right">
+    <img class="payment" src="assets/img/payment.png" alt="payment"></div>
+  </div>
 </section>
