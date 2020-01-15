@@ -16,8 +16,17 @@ class HumoController extends Controller {
   $this->set('title', 'Shop');
 }
   public function fil() {
+  if(!empty($_GET['id'])){
+    $products = $this->humoDAO->selectByFilter($_GET['id']);
+  } else {
+    $products = $this->humoDAO->selectAllItems();
+  }
+
+  $this->set('shopitems', $products);
   $this->set('title', 'Filter');
-  $this->set('shopitems', $this->humoDAO->selectAllItems());
+}
+public function detail() {
+  $this->set('title', 'Productinfo');
 }
 
 }

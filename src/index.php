@@ -11,6 +11,10 @@ $routes = array(
   'fil' => array(
     'controller' => 'Humo',
     'action' => 'fil'
+  ),
+  'detail' => array(
+    'controller' => 'Humo',
+    'action' => 'detail'
   )
 );
 
