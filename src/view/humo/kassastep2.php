@@ -39,12 +39,14 @@ Humokassa
 </div>
 
 <form action="">
+
+<div class="form__wrapper">
 <div class="optional">
   <p>Type bestelling</p>
   <p class="grey">optioneel</p>
 </div>
 <div class="guest__wrapper">
-<input type="radio" name="type-bestelling" id="particulier">
+<input checked type="radio" name="type-bestelling" id="particulier">
 <label for="particulier">Particulier</label>
 <input type="radio" name="type-bestelling" id="Zakelijk">
 <label for="zakelijk">Zakelijk</label></div>
@@ -54,25 +56,25 @@ Humokassa
   <p class="grey">optioneel</p>
 </div>
 <div class="guest__wrapper">
-<input type="radio" name="type-bestelling" id="heer">
-<label for="heer">Dhr.</label>
-<input type="radio" name="type-bestelling" id="mevrouw">
+<input  checked type="radio" name="geslacht" id="heer">
+<label  for="heer">Dhr.</label>
+<input type="radio" name="geslacht" id="mevrouw">
 <label for="mevrouw">Mevr.</label></div>
 
 <p>Naam</p>
 <div class="guest__wrapper">
-<input type="text" name="first-name" id="first-name" placeholder="Voornaam">
-<input type="text" name="last-name" id="last-name" placeholder="Achternaam">
+<input class="fill-in" type="text" name="first-name" id="first-name" placeholder="Voornaam">
+<input class="fill-in" type="text" name="last-name" id="last-name" placeholder="Achternaam">
 </div>
 <p>Straatnaam</p>
 <div class="guest__wrapper">
-<input type="text" name="streetname" id="streetname">
+<input class="fill-in" type="text" name="streetname" id="streetname">
 </div>
 
 <p>Straatnaam</p>
 <div class="guest__wrapper">
-<input class="small-input" type="number" name="huisnummer" id="huisnummer" placeholder="Nr.">
-<input class="small-input" type="number" name="toeveging" id="toeveging" placeholder="Toev.">
+<input class="fill-in small-input" type="number" name="huisnummer" id="huisnummer" placeholder="Nr.">
+<input class="fill-in small-input" type="number" name="toeveging" id="toeveging" placeholder="Toev.">
 </div>
 
 <div class="optional">
@@ -80,17 +82,17 @@ Humokassa
   <p class="grey">optioneel</p>
 </div>
 <div class="guest__wrapper">
-<input class="medium-input" type="text" name="busnr" id="busnr">
+<input class="fill-in medium-input" type="text" name="busnr" id="busnr">
 </div>
 
 <p>Postcode</p>
 <div class="guest__wrapper">
-<input class="medium-input" type="number" name="postcode" id="poastcode" placeholder="Bijv. 3000">
+<input class="fill-in medium-input" type="number" name="postcode" id="poastcode" placeholder="Bijv. 3000">
 </div>
 
 <p>Woonplaats</p>
 <div class="guest__wrapper">
-<input type="text" name="woonplaats" id="woonplaats">
+<input class="fill-in" type="text" name="woonplaats" id="woonplaats">
 </div>
 
 <div class="optional">
@@ -104,12 +106,12 @@ Humokassa
 
 <p>E-mailadress</p>
 <div class="guest__wrapper">
-<input type="email" name="email" id="email">
-
+<input class="fill-in" type="email" name="email" id="email">
+</div>
 
 <p>Telefoonnumber</p>
 <div class="guest__wrapper">
-<input type="tel" name="tel" id="tel">
+<input class="fill-in" type="tel" name="tel" id="tel">
 </div>
 
 <p>E-mailwensen</p>
@@ -117,10 +119,16 @@ Humokassa
 <input type="checkbox" name="confrim" id="confrim">
 <label for="confrim">Ja, ik wil een e-mail krijgen</label>
 </div>
+</div>
 
-<div class="buttons__wrapper">
-<input type="button" value="terug">
+<div class="button__wrapper">
+<div class="back__wrapper">
+<input type="button" value="Terug">
+</div>
+<div class="forward__wrapper">
 <input type="submit" value="Volgende">
+</div>
+
 </div>
 </form>
 </section>

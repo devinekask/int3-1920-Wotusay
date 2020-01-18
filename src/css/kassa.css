@@ -131,3 +131,196 @@
     border: solid 2px var(--colorRed);
   }
 }
+
+.form__wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 15rem 40rem;
+  margin-top: 7.3rem;
+  grid-gap: 3.5rem;
+
+  & input[type=radio] {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 1px var(--colorRed);
+
+    &:checked {
+      background-color: var(--colorRed);
+    }
+  }
+
+  & input[type=checkbox] {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3px;
+    display: inline-block;
+    border: solid 1px var(--colorRed);
+
+    &:checked {
+      background-color: var(--colorRed);
+      background-image: url(../assets/img/checkbox.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  & p {
+    display: grid;
+    text-align: right;
+    margin-right: 2rem;
+  }
+}
+
+.grey {
+  color: #8b8484;
+}
+
+.fill-in {
+  appearance: none;
+  border: solid 1px var(--colorRed);
+  padding: 1rem;
+  border-radius: 4px;
+  width: 19rem;
+  font-size: var(--smallSize);
+}
+
+.small-input {
+  width: 7.8rem;
+}
+
+.medium-input {
+  width: 12rem;
+}
+
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.2rem;
+
+  & input[type=button] {
+    appearance: none;
+    color: var(--colorRed);
+    font-weight: bold;
+    font-size: var(--buySize);
+    background-color: white;
+    border: solid 2px var(--colorRed);
+    width: 16.5rem;
+    border-radius: 7px;
+    padding: 1rem;
+    margin-right: 53rem;
+  }
+
+  & input[type=submit] {
+    appearance: none;
+    color: white;
+    font-weight: bold;
+    font-size: var(--buySize);
+    background-color: var(--colorRed);
+    border: solid 2px var(--colorRed);
+    width: 16.5rem;
+    border-radius: 7px;
+    padding: 1rem;
+  }
+}
+
+.payment__methode {
+  border: solid 1px var(--colorRed);
+  color: var(--colorRed);
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  min-width: 78.8rem;
+  display: grid;
+  grid-template-columns: 15rem 9rem;
+  padding: 2rem;
+}
+
+.radio--payment {
+  position: absolute;
+  appearance: none;
+}
+
+.first {
+  margin-top: 5rem;
+}
+
+.radio--payment:checked + .payment__methode {
+  background-color: var(--colorRed);
+  color: white;
+}
+
+.overview__wrapper {
+  display: grid;
+  grid-template-columns: 50.3rem 36.6rem;
+  grid-gap: 5.2rem;
+  margin-top: 8.1rem;
+
+  & p {
+    margin-top: 1.3rem;
+  }
+
+  & .title {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+
+  & .red {
+    margin-top: 1rem;
+  }
+}
+
+.aflever__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 23rem);
+  grid-gap: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.winkelmandje__overview {
+  background-color: var(--colorGrey);
+  padding: 2rem;
+  height: 40rem;
+
+  & .title {
+    font-size: 2.2rem;
+  }
+
+  & .line-full {
+    margin-bottom: 1px;
+  }
+}
+
+.img__wrapper {
+  display: flex;
+  margin-top: 2.4rem;
+
+  & img {
+    width: 6rem;
+    height: 9rem;
+  }
+
+  & p {
+    width: 18.6rem;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+  }
+}
+
+.overview {
+
+  & input[type=button] {
+    margin-right: 14rem;
+  }
+}

@@ -84,6 +84,7 @@
   color: var(--colorRed);
   font-size: 1.7rem;
   margin-left: -1rem;
+  background-color: white;
 
   &:hover {
     text-decoration: underline;

@@ -40,4 +40,12 @@ class HumoController extends Controller {
   public function kassastep2() {
     $this->set('title', 'Kassa');
   }
+
+  public function kassastep3() {
+    $this->set('title', 'Kassa');
+  }
+
+  public function overview() {
+    $this->set('title', 'Kassa');
+  }
 }

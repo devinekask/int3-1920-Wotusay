@@ -27,7 +27,21 @@ $routes = array(
   'kassastep2' => array(
     'controller' => 'Humo',
     'action' => 'kassastep2'
+  ),
+  'kassastep3' => array(
+    'controller' => 'Humo',
+    'action' => 'kassastep3'
+  ),
+  'overview' => array(
+    'controller' => 'Humo',
+    'action' => 'overview'
   )
+  ,
+  'confermation' => array(
+    'controller' => 'Humo',
+    'action' => 'confermation'
+  )
+
 );
 
 if(empty($_GET['page'])) {
