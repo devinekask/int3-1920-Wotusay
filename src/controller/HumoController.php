@@ -30,6 +30,14 @@ class HumoController extends Controller {
   }
 
   public function winkelmandje() {
-    $this->set('title', 'winkelmandje');
+    $this->set('title', 'Winkelmandje');
+  }
+
+  public function kassa() {
+    $this->set('title', 'Kassa');
+  }
+
+  public function kassastep2() {
+    $this->set('title', 'Kassa');
   }
 }

@@ -16,3 +16,7 @@
   --smallSize: 1.4rem;
   /*font weight*/
 }
+
+@custom-media --small-screen (width <= 500px);
+@custom-media --meduim-screen (width >= 850px);
+@custom-media --big-screen (width >= 1200px);

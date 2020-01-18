@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 
     & .link-active {
       color: var(--colorRed) !important;
@@ -60,3 +61,4 @@
     }
   }
 }
+

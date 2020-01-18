@@ -1,0 +1,219 @@
+@media (--small-screen) {
+
+  .container__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .sub-nav {
+    display: none;
+
+  }
+
+  .menu {
+    margin: initial;
+    width: initial;
+
+
+    & .menu__link-big {
+      display: none;
+    }
+  }
+
+  .nav {
+    background-color: white;
+
+    & .menu__item-big {
+      margin-left: 0;
+    }
+
+    & .active {
+      display: none;
+    }
+  }
+
+  .menu__item-mobile {
+    display: initial !important;
+    position: absolute;
+    margin-left: 18rem;
+
+  }
+
+  .footer__nav {
+    display: none !important;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    min-width: 50rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer__bottom {
+    display: none !important;
+  }
+
+  .socials {
+    display: none !important;
+  }
+
+  footer {
+    border: none;
+  }
+
+  .general-items {
+    margin-top: 1rem !important;
+
+    & p {
+      margin-right: 0 !important;
+      font-size: 2rem !important;
+    }
+  }
+
+  .longread__wrapper {
+    border: none;
+    display: unset;
+    width: unset;
+    margin-left: 3rem;
+  }
+
+  .longread__title {
+    margin-top: 2rem !important;
+    width: initial !important;
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+    margin-bottom: 2rem !important;
+  }
+
+  .longread {
+    display: unset;
+    background-color: unset;
+  }
+
+  .text__wrapper {
+    margin-top: 2rem;
+  }
+
+  .longread__button {
+    margin-right: unset;
+    width: unset;
+    margin-top: 2rem;
+  }
+
+  .filter-menu {
+    overflow: auto !important;
+    white-space: nowrap !important;
+    border-bottom: solid 4px var(--colorGrey);
+    border-top: solid 4px var(--colorGrey);
+    position: sticky;
+    top: 0px;
+    background-color: white;
+  }
+
+  .filter-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .filter {
+    display: unset;
+  }
+
+  .container {
+    width: 96vw;
+  }
+
+  .shop-title {
+    font-size: 4.5rem !important;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .information__wrapper {
+    width: 100vw;
+    display: unset;
+  }
+
+  .voordelen {
+    margin-right: unset !important;
+    margin-top: 2rem !important;
+  }
+
+  .prices {
+    margin-right: unset;
+    margin-top: 5rem !important;
+    margin-left: 6.2rem !important;
+  }
+
+  .shop-item__bookbox {
+    height: unset !important;
+    width: 95vw !important;
+  }
+
+  .book__wrapper {
+    display: unset;
+  }
+
+  .shop-boekenreeks {
+    margin-top: 2rem;
+
+    & .button {
+      margin-left: 1rem !important;
+      margin-right: 2rem !important;
+    }
+  }
+
+  .shop-title__books {
+    margin-left: -3rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .shop-title__boekenreeks {
+    margin-left: -1rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .button {
+    margin-bottom: 2rem !important;
+    margin-right: 2rem !important;
+    margin-left: -2rem !important;
+    margin-top: 4rem !important;
+  }
+
+  .img__shopitem {
+    width: 14.2rem;
+    height: 12.8rem;
+  }
+
+  .shop-items {
+    margin-left: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .price__button {
+      font-size: 1.7rem !important;
+      max-width: 15rem !important;
+
+      &::before {
+        transform: scale(0.6);
+      }
+    }
+  }
+
+  .title__wrapper {
+
+    & .line {
+      border: none;
+    }
+
+    & .longread__title {
+      margin-left: unset;
+    }
+  }
+}

@@ -19,6 +19,14 @@ $routes = array(
   'winkelmandje' => array(
     'controller' => 'Humo',
     'action' => 'winkelmandje'
+  ),
+  'kassa' => array(
+    'controller' => 'Humo',
+    'action' => 'kassa'
+  ),
+  'kassastep2' => array(
+    'controller' => 'Humo',
+    'action' => 'kassastep2'
   )
 );
 
