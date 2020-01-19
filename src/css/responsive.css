@@ -111,6 +111,7 @@
     border-bottom: solid 4px var(--colorGrey);
     border-top: solid 4px var(--colorGrey);
     position: sticky;
+    z-index: 1;
     top: 0px;
     background-color: white;
   }

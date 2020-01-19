@@ -10,7 +10,7 @@ class HumoDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  public function selectById() {
+  public function selectById($id) {
     $sql = "SELECT * FROM `humo_items` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);

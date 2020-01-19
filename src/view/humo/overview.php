@@ -68,7 +68,7 @@ Humokassa
   </div>
   <div class="winkelmandje__overview">
     <span class="bold title">Winkelmandje</span>
-    <div class="img__wrapper">
+    <div class="image__wrapper">
     <img src="assets/img/neuromancer-winkelmandje.png" alt="" srcset="">
     <div class="text__wrapper">
     <p>Neuromancer - William Gibson - Hardcover</p>

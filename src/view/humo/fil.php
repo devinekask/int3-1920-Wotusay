@@ -28,7 +28,7 @@
 <?php foreach($shopitems as $shopitem):?>
 
 <li class="shop-item">
-<a class="underline__gone" href=""><img class="img__shopitem" src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" width="254" height="229">
+<a class="underline__gone" href="index.php?page=detail&id=<?php echo $shopitem['id']; ?>"><img class="img__shopitem" src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" width="254" height="229">
 <p class="price__button"><?php echo $shopitem['name']?> |
 €<?php echo $shopitem['price']?></p></a>
 </li>

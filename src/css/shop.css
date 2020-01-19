@@ -273,3 +273,22 @@
   }
 }
 
+.text {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.confermation__wrapper {
+  margin-top: 2rem;
+
+  & a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 4rem;
+
+    &:hover {
+      text-decoration: underline;
+
+    }
+  }
+}

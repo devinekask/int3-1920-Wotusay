@@ -2,12 +2,15 @@
 
 require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/HumoDAO.php';
+require_once __DIR__ . '/../dao/DetailDAO.php';
 
 class HumoController extends Controller {
 
+  private $detailDAO;
   private $humoDAO;
 
   function __construct() {
+    $this->detailDAO = new DetailDAO();
     $this->humoDAO = new HumoDAO();
   }
 
@@ -27,6 +30,32 @@ class HumoController extends Controller {
   }
   public function detail() {
    $this->set('title', 'Productinfo');
+    if(!empty($_GET['id'])) {
+      $product = $this->detailDAO->selectById($_GET['id']);
+      $item = $this->humoDAO->selectById($_GET['id']);
+      $relevantfirst = $this->humoDAO->selectById($_GET['id'] + 1);
+      $relevantsecond = $this->humoDAO->selectById($_GET['id'] - 1);
+      $relevantthrid = $this->humoDAO->selectById($_GET['id'] + 2);
+      $relevantfourth = $this->humoDAO->selectById($_GET['id'] + 3);
+      $relevantfifth = $this->humoDAO->selectById($_GET['id'] - 2);
+      $relevantsixd = $this->humoDAO->selectById($_GET['id'] - 3);
+      $versions = $this->detailDAO->selectVersionsById($_GET['id']);
+
+
+    } if (empty($product)){
+      $_SESSION['error'] = 'Het product werd niet gevonden';
+      header('Location:index.php');
+      exit();
+    }
+    $this->set('relevant1', $relevantfirst);
+    $this->set('relevant2', $relevantsecond);
+    $this->set('relevant3', $relevantthrid);
+    $this->set('relevant4', $relevantfourth);
+    $this->set('relevant5', $relevantfifth);
+    $this->set('relevant6', $relevantsixd);
+    $this->set('version', $versions);
+    $this->set('item', $item);
+    $this->set('product', $product);
   }
 
   public function winkelmandje() {
@@ -46,6 +75,10 @@ class HumoController extends Controller {
   }
 
   public function overview() {
+    $this->set('title', 'Kassa');
+  }
+
+  public function confermation() {
     $this->set('title', 'Kassa');
   }
 }

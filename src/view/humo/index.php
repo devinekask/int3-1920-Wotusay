@@ -6,7 +6,7 @@
 <span class="subtitle">roman</span>
 <p>Neuromancer is een roman uit 1984. Dit boek heeft namelijk voor het eerst de cyberpunk genre uit heeft gehaalt. Dit boek won een aantal prijzen. Zoals de nebula award en de Hugo award.
 </p>
-<a class="price__button" href="index.php?page=detail">Bestel | €13,50</a>
+<a class="price__button" href="index.php?page=detail&id=1">Bestel | €13,50</a>
 </div></div>
 <a class="longread__button" href="">Ontdek de longread</a>
 </article>
@@ -65,7 +65,7 @@ BOEKENREEKS
 <?php foreach($shopitems as $shopitem):?>
 
 <li class="shop-item">
-<a class="underline__gone" href=""><img src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" class="img__shopitem">
+<a class="underline__gone" href="index.php?page=detail&id=<?php echo $shopitem['id']; ?>"><img src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" class="img__shopitem">
 <p class="price__button"><?php echo $shopitem['name']?> |
 €<?php echo $shopitem['price']?></p></a>
 </li>

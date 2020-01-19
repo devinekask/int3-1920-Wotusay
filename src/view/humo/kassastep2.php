@@ -71,7 +71,7 @@ Humokassa
 <input class="fill-in" type="text" name="streetname" id="streetname">
 </div>
 
-<p>Straatnaam</p>
+<p>Huisnummer</p>
 <div class="guest__wrapper">
 <input class="fill-in small-input" type="number" name="huisnummer" id="huisnummer" placeholder="Nr.">
 <input class="fill-in small-input" type="number" name="toeveging" id="toeveging" placeholder="Toev.">
@@ -109,7 +109,7 @@ Humokassa
 <input class="fill-in" type="email" name="email" id="email">
 </div>
 
-<p>Telefoonnumber</p>
+<p>Telefoonnummer</p>
 <div class="guest__wrapper">
 <input class="fill-in" type="tel" name="tel" id="tel">
 </div>
