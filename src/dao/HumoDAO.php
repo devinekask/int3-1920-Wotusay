@@ -4,7 +4,7 @@ require_once( __DIR__ . '/DAO.php');
 
 class HumoDAO extends DAO {
   public function selectAllItems() {
-    $sql = 'SELECT * FROM `humo_items`';
+    $sql = 'SELECT * FROM `humo_items` WHERE `id` < 18';
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -19,7 +19,7 @@ class HumoDAO extends DAO {
   }
 
   public function selectByFilter($id) {
-    $sql = "SELECT * FROM `humo_items` WHERE `filter` = :filter";
+    $sql = "SELECT * FROM `humo_items` WHERE `filter` = :filter AND `id` < 18";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':filter', $id);
     $stmt->execute();
