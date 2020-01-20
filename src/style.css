@@ -10,7 +10,6 @@
 @import './css/kassa.css';
 @import './css/responsive.css';
 
-
 html {
   height: 100%;
   box-sizing: border-box;
@@ -140,4 +139,17 @@ body {
 
 .menu__item-mobile {
   display: none;
+}
+
+.error {
+  color: red;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -2rem;
+  margin-top: 4rem;
 }

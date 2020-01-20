@@ -203,7 +203,7 @@
   align-items: center;
   margin-top: 4.2rem;
 
-  & input[type=button] {
+  & .goback {
     appearance: none;
     color: var(--colorRed);
     font-weight: bold;
@@ -213,10 +213,12 @@
     width: 16.5rem;
     border-radius: 7px;
     padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-right: 53rem;
   }
 
-  & input[type=submit] {
+  & .forward {
     appearance: none;
     color: white;
     font-weight: bold;

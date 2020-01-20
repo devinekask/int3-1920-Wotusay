@@ -54,14 +54,14 @@ Humokassa
 <input class="radio--payment" type="radio" name="payment-methode" id="paypal">
 <label   class="payment__methode"for="paypal">
   <img src="assets/img/paypal.png" alt="paypal">
-  <span>paypal</span>
+  <span>Paypal</span>
 </label></div>
 <div class="button__wrapper">
 <div class="back__wrapper">
-<input type="button" value="Terug">
+<a href="index.php?page=kassastep2" class="goback underline__gone"> Terug</a>
 </div>
 <div class="forward__wrapper">
-<input type="submit" value="Volgende">
+<input type="submit" value="Volgende"  class="forward">
 </form>
 </div>
 </section

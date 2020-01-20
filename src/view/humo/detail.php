@@ -17,7 +17,7 @@
 <?php }?>
 <img src="<?php echo $product['picturedetail'] ?>" alt="neuromancer" witdh="357" height="538">
 </div>
-<form action="" method="get">
+<form action="index.php?page=winkelmandje" method="post">
 <div class="productinformation__wrapper">
 <div class="flex__wrapper">
 <?php if ( $item['id'] === 12 ||  $item['id'] === 10 ||  $item['id']  < 18 && $item['filter'] === 1 ) {?>
@@ -36,10 +36,11 @@
 <?php } elseif ($item['id'] === 19) {} ?>
 </div>
 <div class="flex__wrapper">
-<span class="bold">€<?php echo $item['price']; if($item['id'] === 18) { ?> /maand <?php }?> </span>
+<span class="bold">€<?php echo money_format("%i", $item['price']); if($item['id'] === 18) { ?> /maand <?php }?> </span>
 <span class="vooraad">Op vooraad</span>
 </div>
-<a class="button__bestel" href="">Bestel</a>
+<input type="hidden" name="product_id" value="<?php echo $item['id'];?>">
+<button type="submit" name="action" value="add" class="button__bestel">Bestel</button>
 <p class="service">Voor 20:00 besteld <span class="red">morgen</span> in huis</p>
 <p class="service"><span class="red">Gratis retourneren </span> binnen de 30 dagen</p>
 <p class="service"><span class="red">Kortingscode</span> voor humo werkt hier</p>
@@ -52,6 +53,7 @@
 </div>
 <?php }?>
 </div>
+</form>
 <?php if($item['id'] === 1) { ?>
 <div class="picture__wrapper">
 <input checked type="radio" name="pictures" id="front">
@@ -102,12 +104,12 @@
   <p class="price__button"><?php echo $relevant2['name'] ?> | €<?php echo $relevant2['price'] ?></p>
 </a>
   <?php } if($item['id'] === 17 || $item['id'] === 19) {?>
-    <a href="index.php?page=detail&id=<?php echo $relevant6['id'] ?>" class="underline__gone">
+    <a href="index.php?page=detail&id=<?php echo $relevant6['id'] ?>" class="underline__gone gone">
   <img src="<?php echo $relevant6['picture'] ?>" alt="<?php echo $relevant6['name'] ?>" width="209" height="188">
   <p class="price__button"><?php echo $relevant6['name'] ?> | €<?php echo $relevant6['price'] ?></p>
 </a>
     <?php } else {?>
-<a href="index.php?page=detail&id=<?php echo $relevant3['id'] ?>" class="underline__gone">
+<a href="index.php?page=detail&id=<?php echo $relevant3['id'] ?>" class="underline__gone gone">
   <img src="<?php echo $relevant3['picture'] ?>" alt="<?php echo $relevant3['name'] ?>" width="209" height="188">
   <p class="price__button"><?php echo $relevant3['name'] ?> | €<?php echo $relevant3['price'] ?></p>
 </a>

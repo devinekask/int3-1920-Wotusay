@@ -10,6 +10,7 @@
 </ul>
 </nav>
 <div class="container">
+  <form action="index.php?page=winkelmandje" method="post" id="cartform">
 <div class="title__wrapper">
 <h2 class="longread__title">
 Winkelmandje
@@ -22,13 +23,25 @@ Winkelmandje
   <li class="voordeel">Gratis verzending boven de 10,-</li>
 </ul>
 <div class="line-full"></div>
+<?php
+          $total = 0;
+          $korting = 0;
+          foreach($_SESSION['winkelmandje'] as $item) {
+            $itemTotal = $item['product']['price'] * $item['quantity'];
+            $total += $itemTotal;
+            $total -= $korting;
+          ?>
 <div class="product--info">
-  <img src="assets/img/neuromancer-winkelmandje.png" alt="neuromancer" width="117" height="176">
-  <p class="bold">Neuromancer - William Gibson - Hardcover</p>
-  <p class="levertijd">Op vooraad voor 20:00, morgen in huis</p>
+<a href="index.php?page=detail&amp;id=<?php echo $item['product']['id'];?>">
+  <img src="<?php echo $item['product']['shop'];?>" alt="<?php echo $item['product']['name'];?>" width="117" height="176">
+  </a>
+  <p class="bold"><?php echo $item['product']['name'];?>
+</p>
+  <p class="levertijd gone">Op vooraad voor 20:00, morgen in huis</p>
   <div class="aantal__wrapper">
   <label for="aantal">Aantal</label>
-  <select name="aantal" id="hoeveelheid">
+  <select name="quantity[<?php echo $item['product']['id'];?>]" id="hoeveelheid">
+  <option checked value="<?php echo $item['quantity'];?>"><?php echo $item['quantity'];?></option>
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
@@ -41,14 +54,20 @@ Winkelmandje
   <option value="10">10</option>
   <option value="25">25</option>
   </select>
-  <button class="delete">Verwijderen</button>
+  <button type="submit" id="update-cart" name="remove" value="<?php echo $item['product']['id'];?>" class="delete">Verwijderen</button>
+  <button type="submit" name="action" value="update" class="red update">Update</button>
+  </form>
 </div>
-  <span class="bold">€12,50</span>
+  <span class="bold">€<?php echo money_format("%i", $itemTotal);?></span>
+  </form>
 </div>
+<?php
+          }
+          ?>
 <div class="line-full"></div>
 </div>
 </section>
-<section>
+<section class="mobile">
   <div class="container">
     <h2 class="hidden">Total price</h2>
     <div class="relevant__wrapper kortings__wrapper">
@@ -56,24 +75,31 @@ Winkelmandje
     <div class="text_wrapper">
       <span>Kortingscode</span>
       <button class="information">?</button></div>
-      <input type="text" name="kortingscode" id="kortingscode" class="kortingscode__input">
+      <form action="index.php?page=winkelmandje" method="post">
+      <input type="text" name="code" id="code" class="kortingscode__input">
+      <button type="submit" value="<?php  echo $korting = 4.5;?>" name="korting" class="red update">Update</button>
+    </form>
     </div>
     <div class="total__wrapper">
       <div class="total-text">
-      <p>Totaal artikelen <span class="aantal-mini">(1)</span></p>
-      <p class="bold">€12,50</p></div>
+      <p>Totaal artikelen <span class="aantal-mini">(<?php echo $numItems;?>)</span></p>
+      <p class="bold"> €<?php echo money_format("%i", $total);?> </p></div>
       <div class="total-text">
       <p>Verzendkosten</p>
       <p class="green">Gratis</p></div>
       <div class="total-text">
       <p>Kortingscode</p>
-      <p class="bold">- €4,50</p></div>
+      <p class="bold">- €<?php echo money_format("%i", $korting); ?></p></div>
       <div class="line-full"></div>
       <div class="total-text">
       <p class="bold">Totaal</p>
-      <p class="bold">€8,00</p></div>
-      <input class="submit-total" type="submit" value="Verder naar bestelling">
+      <p class="bold">€<?php echo money_format("%i", $total - $korting);?> </p></div>
+      <form action="index.php?page=kassa" method="post" id="cartform">
+
+      <button class="submit-total" type="submit" name="action" value="checkout" > Verder naar bestelling </button>
+        </form>
       </div>
+
     </div>
     </div>
     </div>

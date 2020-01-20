@@ -45,7 +45,18 @@
       </div>
       </header>
       <main>
-      <?php echo $content;?>
+      <?php
+      if(!empty($_SESSION['error'])) {
+          foreach($_SESSION['error'] as $error){
+          echo '<div class="error box">' . $error . '</div>';
+        }
+      }
+        if(!empty($_SESSION['info'])) {
+          echo '<div class="info box">' . $_SESSION['info'] . '</div>';
+        };
+
+      echo $content;?>
+
     </main>
     <footer>
       <nav class="footer__nav">

@@ -49,14 +49,13 @@ Humokassa
 <input class="input__login" type="password" name="wachtwoord"></div>
 </form>
 <a class="red" href="">Wachtwoord vergeten</a>
-
+<form action="index.php?page=kassastep2" method="post">
 <div class="buttons__wrapper">
 <input class="login__button" name="inloggen" value="Inloggen" type="button">
 <span class="bold">OF</span>
-<input class="guest__button" name="guest" value="Doorgaan als gast" type="button">
-</div>
-</div>
-</div>
 
-
+<button class="guest__button" name="guest" value="guest" type="submit"> Doorgaan als gast</button>
+</div></form>
+</div>
+</div>
 </section>

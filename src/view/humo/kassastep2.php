@@ -38,8 +38,9 @@ Humokassa
 </div>
 </div>
 
-<form action="">
-
+<form action="index.php" method="post">
+  <div class="mid">
+<p class="error"></p></div>
 <div class="form__wrapper">
 <div class="optional">
   <p>Type bestelling</p>
@@ -56,25 +57,28 @@ Humokassa
   <p class="grey">optioneel</p>
 </div>
 <div class="guest__wrapper">
-<input  checked type="radio" name="geslacht" id="heer">
+<input  checked type="radio" name="aanspreking" id="heer">
 <label  for="heer">Dhr.</label>
-<input type="radio" name="geslacht" id="mevrouw">
+<input type="radio" name="aanspreking" id="mevrouw">
 <label for="mevrouw">Mevr.</label></div>
 
 <p>Naam</p>
 <div class="guest__wrapper">
-<input class="fill-in" type="text" name="first-name" id="first-name" placeholder="Voornaam">
-<input class="fill-in" type="text" name="last-name" id="last-name" placeholder="Achternaam">
+<p class="error"></p>
+<input class="fill-in" type="text" required name="voornaam" id="first-name" placeholder="Voornaam">
+<input class="fill-in" type="text" required  name="achternaam" id="last-name" placeholder="Achternaam">
 </div>
 <p>Straatnaam</p>
 <div class="guest__wrapper">
-<input class="fill-in" type="text" name="streetname" id="streetname">
+<p class="error"></p>
+<input class="fill-in" required  type="text" name="straatnaam" id="streetname">
 </div>
 
 <p>Huisnummer</p>
 <div class="guest__wrapper">
-<input class="fill-in small-input" type="number" name="huisnummer" id="huisnummer" placeholder="Nr.">
-<input class="fill-in small-input" type="number" name="toeveging" id="toeveging" placeholder="Toev.">
+<p class="error"></p>
+<input class="fill-in small-input" required  type="number" name="huisnummer" id="huisnummer" placeholder="Nr.">
+<input class="fill-in small-input" type="number" placeholder="Toev.">
 </div>
 
 <div class="optional">
@@ -87,12 +91,16 @@ Humokassa
 
 <p>Postcode</p>
 <div class="guest__wrapper">
-<input class="fill-in medium-input" type="number" name="postcode" id="poastcode" placeholder="Bijv. 3000">
+<p class="error"></p>
+
+<input class="fill-in medium-input" required type="number" name="postcode" id="postcode" placeholder="Bijv. 3000">
 </div>
 
 <p>Woonplaats</p>
 <div class="guest__wrapper">
-<input class="fill-in" type="text" name="woonplaats" id="woonplaats">
+<p class="error"></p>
+
+<input class="fill-in" type="text" required  name="woonplaats" id="woonplaats">
 </div>
 
 <div class="optional">
@@ -100,33 +108,39 @@ Humokassa
   <p class="grey">optioneel</p>
 </div>
 <div class="guest__wrapper">
-<input type="checkbox" name="factuur" id="factuur">
+<input type="checkbox" >
 <label for="factuur"> Ander factuuradres</label>
 </div>
 
 <p>E-mailadress</p>
 <div class="guest__wrapper">
-<input class="fill-in" type="email" name="email" id="email">
+<p class="error"></p>
+
+<input class="fill-in" required  type="email" name="email" id="email">
 </div>
 
 <p>Telefoonnummer</p>
 <div class="guest__wrapper">
-<input class="fill-in" type="tel" name="tel" id="tel">
+<p class="error"></p>
+
+<input class="fill-in" required  type="tel" name="telefoonumber" id="tel">
 </div>
 
 <p>E-mailwensen</p>
 <div class="guest__wrapper">
-<input type="checkbox" name="confrim" id="confrim">
-<label for="confrim">Ja, ik wil een e-mail krijgen</label>
+<p class="error"></p>
+<input type="checkbox" required>
+<label for="confrim">Ja, ik wil een e-mail</label>
 </div>
 </div>
 
 <div class="button__wrapper">
 <div class="back__wrapper">
-<input type="button" value="Terug">
+<a href="" class="goback underline__gone"> Terug </a>
 </div>
 <div class="forward__wrapper">
-<input type="submit" value="Volgende">
+  <input type="hidden" name="action" value="insert">
+<input type="submit" value="Volgende" class="forward">
 </div>
 
 </div>

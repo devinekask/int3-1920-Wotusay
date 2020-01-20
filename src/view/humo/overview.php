@@ -92,9 +92,9 @@ Humokassa
 
   <div class="button__wrapper">
 <div class="back__wrappper overview">
-<input type="button" value="Terug">
+<input type="button" value="Terug" class="goback">
 </div>
 <div class="forward__wrapper">
-<input type="submit" value="Afrekenen">
+<input type="submit" value="Afrekenen" class="forward">
 </div>
 </section>

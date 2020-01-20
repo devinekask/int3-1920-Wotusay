@@ -21,7 +21,9 @@
 }
 
 .product--info {
-  display: flex;
+
+  display: grid;
+  grid-template-columns: 8rem 17rem 30rem 17rem 3rem;
   justify-content: center;
   align-items: center;
 
@@ -172,5 +174,12 @@
 
 .align-right {
   display: flex;
-  margin-right: -44.5rem;
+}
+
+.update {
+  appearance: none;
+  background-color: white;
+  border: none;
+  font-size: 1.7rem;
+  margin-top: 1rem;
 }

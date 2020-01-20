@@ -217,4 +217,106 @@
       margin-left: unset;
     }
   }
+
+  .detail {
+
+    & .price__button {
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    & .detail__title {
+      margin-bottom: 2rem;
+      font-size: 1.9rem;
+    }
+
+    & .item__wrapper {
+      margin: unset;
+      width: unset;
+      grid-template-columns: unset;
+    }
+
+    & .picture__wrapper {
+      display: grid;
+      grid-template-columns: 16rem 16rem;
+      justify-content: center;
+    }
+
+    & .front {
+      margin-left: unset;
+    }
+  }
+
+  .specific__information {
+    width: unset;
+    margin-left: 5rem;
+
+    & p {
+      font-weight: 300;
+      margin-bottom: 1rem;
+      max-width: 38rem;
+    }
+  }
+
+  .gone {
+    display: none;
+  }
+
+  .relevant__products {
+    grid-template-columns: repeat(2, 1fr);
+
+    & img {
+      margin-left: unset;
+    }
+  }
+
+  .gone {
+    display: none;
+  }
+
+  .product--info {
+    display: grid;
+    grid-template-columns: 14rem 19rem 6rem 5rem;
+    justify-content: unset;
+
+    & img {
+      margin: unset;
+    }
+
+    & .bold {
+      max-width: 15.6rem;
+    }
+  }
+
+  .mobile {
+
+    & .kortings__wrapper {
+      display: grid;
+      grid-gap: 4rem;
+    }
+
+    & .information {
+      margin-right: unset;
+    }
+
+    & .align-right {
+      margin-right: unset;
+    }
+  }
+
+  .progress-steps {
+    grid-template-columns: repeat(4, 13rem);
+  }
+
+  .form__wrapper {
+    grid-template-columns: 16rem 27rem;
+  }
+
+  .button__wrapper {
+
+    & .goback {
+      margin-right: 4rem;
+    }
+  }
 }
+

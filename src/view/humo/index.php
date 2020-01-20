@@ -67,7 +67,7 @@ BOEKENREEKS
 <li class="shop-item">
 <a class="underline__gone" href="index.php?page=detail&id=<?php echo $shopitem['id']; ?>"><img src="<?php echo $shopitem['picture']?>" alt="<?php echo $shopitem['name']?>" class="img__shopitem">
 <p class="price__button"><?php echo $shopitem['name']?> |
-€<?php echo $shopitem['price']?></p></a>
+€<?php echo money_format("%i", $shopitem['price']);?></p></a>
 </li>
 <?php endforeach;?>
 </ul>
