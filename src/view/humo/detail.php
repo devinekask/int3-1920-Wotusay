@@ -15,7 +15,7 @@
 <?php if($item['id'] === 1) { ?>
 <span class="tip">Goed boek</span>
 <?php }?>
-<img src="<?php echo $product['picturedetail'] ?>" alt="neuromancer" witdh="357" height="538">
+<img src="<?php echo $product['picturedetail'] ?>" class="js-picture" alt="<?php echo $item['name'];?>" witdh="357" height="538">
 </div>
 <form action="index.php?page=winkelmandje" method="post">
 <div class="productinformation__wrapper">
@@ -56,10 +56,10 @@
 </form>
 <?php if($item['id'] === 1) { ?>
 <div class="picture__wrapper">
-<input checked type="radio" name="pictures" id="front">
+<input checked value="1" class="js-radio" type="radio" name="pictures" id="front">
 <label class="front" for="front"></label>
-<input type="radio" name="pictures" id="back">
-<label class="back" for="back"></label>
+<input value="2" class="js-radio" type="radio" name="pictures" id="back">
+<label  class="back" for="back"></label>
 </div>
 <?php }?>
 </form>

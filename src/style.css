@@ -153,3 +153,14 @@ body {
   margin-bottom: -2rem;
   margin-top: 4rem;
 }
+
+.information-js {
+  position: relative;
+  color: white;
+  font-size: 1.6rem;
+  background-color: black;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}

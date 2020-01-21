@@ -1,3 +1,4 @@
+<?php if($numItems == 0 ) { echo '<p class="error mid"> Er zit niets in je winkelmandje</p>';} else { ?>
 <section class="winkelmandje">
 <nav class="filter">
 <ul class="filter-menu">
@@ -17,17 +18,17 @@ Humokassa
 <div class="line"></div></div>
 <div class="progress-steps">
 <div class="step__wrapper">
-<a class="underline__gone" href="">
+<a class="underline__gone" href="index.php?page=kassastep2">
 <span class="information__step information__step--active">Gegevens</span>
 <span class="number__step number__step--active">1</span></a>
 </div>
 <div class="step__wrapper">
-<a class="underline__gone" href="">
+<a class="underline__gone" href="index.php?page=kassastep3">
 <span class="information__step information__step--active">Betaalwijze</span>
 <span class="number__step number__step--active">2</span></a>
 </div>
 <div class="step__wrapper">
-<a class="underline__gone" href="">
+<a class="underline__gone" href="index.php?page=overview&payment-methode=<?php echo $_GET['payment-methode']?>">
 <span class="information__step information__step--active">Overzicht</span>
 <span class="number__step number__step--active">3</span></a>
 </div>
@@ -43,16 +44,16 @@ Humokassa
     <div class="aflever__wrapper">
     <div class="aflever">
       <span class="bold">Aflever- en factuuradres</span>
-      <p>Wout Kappa</p>
-      <p>Heulestraat 303</p>
-      <p>9000, Kortijk</p>
+      <p><?php echo $guest['voornaam']; ?> <?php echo $guest['achternaam']; ?></p>
+      <p><?php echo $guest['straatnaam']; ?> <?php echo $guest['huisnummer']; ?></p>
+      <p><?php echo $guest['postcode']; ?>, <?php echo $guest['woonplaats']; ?></p>
       </div>
       <div class="contact--gevens">
         <span class="bold">Contactgegevens</span>
-        <p>wout.salembier@hotmail.com</p>
-        <p>046039398</p>
+        <p><?php echo $guest['email']; ?></p>
+        <p><?php echo $guest['telefoonumber']; ?></p>
       </div></div>
-      <a class="red" href="">Wijzig gegevens</a>
+      <a class="red" href="index.php?page=kassastep2">Wijzig gegevens</a>
       <div class="line-full"></div>
       <div class="levering">
         <span class="bold">Levering</span>
@@ -62,39 +63,57 @@ Humokassa
       <div class="line-full"></div>
       <div class="betaalmethode">
         <span class="bold">Betaalmethode</span>
-        <p class="info-text">Bancontact</p>
-        <a class="red" href="">Wijzig betaalmethode</a>
+        <p class="info-text">
+          <?php if($_GET['payment-methode'] == 'bancontact')  {?>
+          Bancontact <?php } if($_GET['payment-methode'] == 'visa')  {?>
+          Visa <?php } elseif ($_GET['payment-methode'] == 'paypal') { ?>
+          Paypal<?php }; ?></p>
+        <a class="red" href="index.php?page=kassastep3">Wijzig betaalmethode</a>
       </div>
   </div>
   <div class="winkelmandje__overview">
     <span class="bold title">Winkelmandje</span>
     <div class="image__wrapper">
-    <img src="assets/img/neuromancer-winkelmandje.png" alt="" srcset="">
+      <div class="overview__items">
+    <?php
+          $total = 0;
+          $korting= 4.50;
+          if ($numItems == 0 ){ echo 'Er zit niets in je winkelmandje'; } else {
+          foreach($_SESSION['winkelmandje'] as $item) {
+            $itemTotal = $item['product']['price'] * $item['quantity'];
+            $total += $itemTotal;
+          ?>
+    <a href="index.php?page=detail&amp;id=<?php echo $item['product']['id'];?>">
+  <img src="<?php echo $item['product']['shop'];?>" alt="<?php echo $item['product']['name'];?>" >
+  </a>
     <div class="text__wrapper">
-    <p>Neuromancer - William Gibson - Hardcover</p>
-    <p>€12,50</p></div>
-</div>
+    <p><?php echo $item['product']['name'];?></p>
+    <p><?php echo $item['quantity'];?> x €<?php echo money_format("%i", $item['product']['price']);?></p></div><?php } ?>
+    <?php } ?>
+</div></div>
 <div class="line-full"></div>
 <div class="total-text">
-      <p>Totaal artikelen <span class="aantal-mini">(1)</span></p>
-      <p class="bold">€12,50</p></div>
+      <p>Totaal artikelen <span class="aantal-mini">(<?php echo $numItems;?>)</span></p>
+      <p class="bold">€<?php echo money_format("%i", $total);?></p></div>
       <div class="total-text">
       <p>Verzendkosten</p>
       <p class="green">Gratis</p></div>
       <div class="total-text">
       <p>Kortingscode</p>
-      <p class="bold">- €4,50</p></div>
+      <p class="bold">- €<?php echo money_format("%i", $korting);?></p></div>
       <div class="line-full"></div>
       <div class="total-text">
       <p class="bold">Totaal</p>
-      <p class="bold">€8,00</p></div>
+      <p class="bold">€<?php echo money_format("%i", $total - $korting);?></p></div>
   </div>
-
   <div class="button__wrapper">
 <div class="back__wrappper overview">
-<input type="button" value="Terug" class="goback">
+<a href="index.php?page=kassastep3" class="goback underline__gone"> Terug</a>
 </div>
 <div class="forward__wrapper">
-<input type="submit" value="Afrekenen" class="forward">
+  <form action="index.php?page=overview" method="post">
+<button type="submit" name="action" value="checkout" class="forward"> Afrekenen </button>
+</form>
 </div>
 </section>
+<?php } ?>

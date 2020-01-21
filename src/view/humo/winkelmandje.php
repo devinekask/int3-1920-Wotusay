@@ -10,7 +10,7 @@
 </ul>
 </nav>
 <div class="container">
-  <form action="index.php?page=winkelmandje" method="post" id="cartform">
+  <form action="index.php?page=winkelmandje" method="post" id="cartform" class="js-form">
 <div class="title__wrapper">
 <h2 class="longread__title">
 Winkelmandje
@@ -26,6 +26,8 @@ Winkelmandje
 <?php
           $total = 0;
           $korting = 0;
+
+          if ($numItems == 0) { echo '<p class="error mid"> Winkelmandje is leeg </p>';} else{
           foreach($_SESSION['winkelmandje'] as $item) {
             $itemTotal = $item['product']['price'] * $item['quantity'];
             $total += $itemTotal;
@@ -40,9 +42,9 @@ Winkelmandje
   <p class="levertijd gone">Op vooraad voor 20:00, morgen in huis</p>
   <div class="aantal__wrapper">
   <label for="aantal">Aantal</label>
-  <select name="quantity[<?php echo $item['product']['id'];?>]" id="hoeveelheid">
+  <select class="js-option" name="quantity[<?php echo $item['product']['id'];?>]" id="hoeveelheid">
   <option checked value="<?php echo $item['quantity'];?>"><?php echo $item['quantity'];?></option>
-  <option value="1">1</option>
+  <option value=1>1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
@@ -56,14 +58,21 @@ Winkelmandje
   </select>
   <button type="submit" id="update-cart" name="remove" value="<?php echo $item['product']['id'];?>" class="delete">Verwijderen</button>
   <button type="submit" name="action" value="update" class="red update">Update</button>
-  </form>
 </div>
   <span class="bold">€<?php echo money_format("%i", $itemTotal);?></span>
-  </form>
 </div>
 <?php
-          }
-          ?>
+if (!empty($_GET['code'])){
+ if ($_GET['code'] === 'Thebooks33') {
+   if ($item['product']['filter']  == '1') {
+      $korting = 4.50;
+    } else {
+        $korting = 0;
+      }
+    }
+          } } } ?>
+              </form>
+
 <div class="line-full"></div>
 </div>
 </section>
@@ -73,11 +82,13 @@ Winkelmandje
     <div class="relevant__wrapper kortings__wrapper">
       <div class="kortin__wrapper">
     <div class="text_wrapper">
+    <p class="information-js hidden">De kortings code vind je achteraan in de humo.</p>
       <span>Kortingscode</span>
       <button class="information">?</button></div>
-      <form action="index.php?page=winkelmandje" method="post">
+      <form action="index.php" method="get">
+      <input type="hidden" name="page" value="winkelmandje">
       <input type="text" name="code" id="code" class="kortingscode__input">
-      <button type="submit" value="<?php  echo $korting = 4.5;?>" name="korting" class="red update">Update</button>
+      <button type="submit" class="update kortingscode">Insert</button>
     </form>
     </div>
     <div class="total__wrapper">
@@ -93,11 +104,14 @@ Winkelmandje
       <div class="line-full"></div>
       <div class="total-text">
       <p class="bold">Totaal</p>
-      <p class="bold">€<?php echo money_format("%i", $total - $korting);?> </p></div>
-      <form action="index.php?page=kassa" method="post" id="cartform">
+
+      <?php if($total-$korting < 0) {    ?>
+        <p class="bold">€0.00 </p>
+      <?php } else {?>
+      <p class="bold">€<?php echo money_format("%i", $total - $korting); ?> </p>
+      <?php  } ?></div>
 
       <button class="submit-total" type="submit" name="action" value="checkout" > Verder naar bestelling </button>
-        </form>
       </div>
 
     </div>

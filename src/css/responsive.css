@@ -318,5 +318,31 @@
       margin-right: 4rem;
     }
   }
-}
 
+  .overview__wrapper {
+    grid-template-columns: unset;
+  }
+
+  .aflever__wrapper {
+    grid-gap: 1rem;
+  }
+
+  .contact--gevens {
+
+    & p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .payment__methode {
+    min-width: unset;
+  }
+
+  .text {
+    font-size: 2.3rem;
+  }
+
+  .confermation__wrapper {
+    margin-bottom: 26rem;
+  }
+}

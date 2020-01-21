@@ -26,6 +26,15 @@ class HumoDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+
+
+  public function selectByMostRecent() {
+    $sql = "SELECT * FROM `humo_guest` ORDER BY `Datecreated` DESC";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
   public function insertGuest($data) {
     $errors = $this->validate( $data );
     if (empty($errors)) {

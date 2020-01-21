@@ -136,5 +136,8 @@ tijd</a></li></ul>
      </div>
     </footer>
     <?php echo $js; ?>
+    <?php if($title == 'Kassa') {
+      echo '<script src="./js/validate.js"></script>';
+    }  ?>
   </body>
 </html>

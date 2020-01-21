@@ -293,7 +293,7 @@
 .winkelmandje__overview {
   background-color: var(--colorGrey);
   padding: 2rem;
-  height: 40rem;
+  height: fit-content;
 
   & .title {
     font-size: 2.2rem;
@@ -325,4 +325,14 @@
   & input[type=button] {
     margin-right: 14rem;
   }
+}
+
+.overview__items {
+  display: grid;
+  grid-template-columns: 5rem 4rem;
+}
+
+.kortingscode {
+  background-color: var(--colorGrey);
+  color: var(--colorRed);
 }

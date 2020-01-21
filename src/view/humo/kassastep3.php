@@ -37,21 +37,21 @@ Humokassa
 <span class="number__step">4</span></a>
 </div>
 </div>
-<form action="">
+<form action="index.php" method="get">
 <div class="payment__wrapper">
-<input checked selected class="radio--payment" type="radio" name="payment-methode" id="bancontact">
+<input checked selected class="radio--payment" type="radio" name="payment-methode" value="bancontact" id="bancontact">
 <label class="payment__methode first" for="bancontact">
   <img src="assets/img/bancontact.png" alt="bancontact">
   <span>Bancontact</span>
 </label></div>
 <div class="payment__wrapper">
-<input class="radio--payment" type="radio" name="payment-methode" id="visa">
+<input class="radio--payment" type="radio" name="payment-methode" value="visa" id="visa">
 <label for="visa"  class="payment__methode">
   <img src="assets/img/visa.png" alt="bancontact">
   <span>Visa</span>
 </label> </div>
 <div class="payment__wrapper">
-<input class="radio--payment" type="radio" name="payment-methode" id="paypal">
+<input class="radio--payment" type="radio" name="payment-methode" value="paypal" id="paypal">
 <label   class="payment__methode"for="paypal">
   <img src="assets/img/paypal.png" alt="paypal">
   <span>Paypal</span>
@@ -61,6 +61,7 @@ Humokassa
 <a href="index.php?page=kassastep2" class="goback underline__gone"> Terug</a>
 </div>
 <div class="forward__wrapper">
+<input type="hidden" name="page" value="overview">
 <input type="submit" value="Volgende"  class="forward">
 </form>
 </div>

@@ -71,7 +71,7 @@ class HumoController extends Controller {
     $numItems = 0;
     if (empty($_SESSION['winkelmandje'])){
       $_SESSION['winkelmandje'] = array();
-    }else {
+    } else {
     foreach ($_SESSION['winkelmandje'] as $productId => $info) {
       $numItems += $info['quantity'];
     } }
@@ -106,6 +106,12 @@ class HumoController extends Controller {
 
   private function _handleCheckout() {
     header('Location: index.php?page=kassa');
+    exit();
+  }
+
+  private function _handleCheckoutOverview() {
+    $_SESSION['winkelmandje'] = array();
+    header('Location: index.php?page=confermation');
     exit();
   }
 
@@ -178,6 +184,35 @@ class HumoController extends Controller {
   }
 
   public function overview() {
+    $numItems = 0;
+    if (empty($_SESSION['winkelmandje'])){
+      $_SESSION['winkelmandje'] = array();
+    } else {
+    foreach ($_SESSION['winkelmandje'] as $productId => $info) {
+      $numItems += $info['quantity'];
+    } }
+    $this->set('numItems', $numItems);
+    if (!empty($_POST['action'])) {
+      if ($_POST['action'] == 'add') {
+        $this->_handleAdd();
+        header('Location: index.php?page=detail&id=' . $_POST['product_id']);
+        exit();
+      }
+      if ($_POST['action'] == 'empty') {
+        $_SESSION['winkelmandje'] = array();
+      }
+      if ($_POST['action'] == 'checkout') {
+        $this->_handleCheckoutOverview();
+      }
+      header('Location: index.php?page=confermation');
+      exit();
+    };
+    if(!empty($this->humoDAO->selectByMostRecent())){
+      $guest = $this->humoDAO->selectByMostRecent();
+    } else {
+      header('Location: index.php?page=kassastep2');
+    }
+    $this->set('guest', $guest);
     $this->set('title', 'Kassa');
   }
 
