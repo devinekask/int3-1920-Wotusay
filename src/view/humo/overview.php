@@ -67,7 +67,10 @@ Humokassa
           <?php if($_GET['payment-methode'] == 'bancontact')  {?>
           Bancontact <?php } if($_GET['payment-methode'] == 'visa')  {?>
           Visa <?php } elseif ($_GET['payment-methode'] == 'paypal') { ?>
-          Paypal<?php }; ?></p>
+          Paypal<?php }; if(empty($_GET['payment-methode'])) {
+                header('Location: index.php?page=kassastep3');
+
+          } ?></p>
         <a class="red" href="index.php?page=kassastep3">Wijzig betaalmethode</a>
       </div>
   </div>

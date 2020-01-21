@@ -1,5 +1,25 @@
 require('./style.css');
 
+const aantalChanger = () => {
+  const $korting = document.querySelector('.kortingscode__input');
+  $korting.addEventListener(`input`, handleInputField);
+};
+
+const handleInputField = e => {
+  e.preventDefault();
+  const winkelmandje = document.querySelector(`.header`);
+  const $price = document.querySelector(`.korting`);
+
+  const value = e.currentTarget.value;
+  if (value === 'Thebooks33' || value === 'humoboeken') {
+    $price.textContent = '€4.50';
+    winkelmandje.innerHTML += `<?php echo $korting= 4.5 ?>`;
+  }
+  else {
+    winkelmandje.innerHTML += `<?php echo $korting = 0 ?>`;
+    $price.textContent = '€0.00';
+  }
+};
 
 const handleSwitchEvent = e => {
   e.preventDefault();
@@ -37,6 +57,7 @@ const pictureSwitcher = () => {
 const init = () => {
   pictureSwitcher();
   infoButton();
+  aantalChanger();
 };
 
 init();

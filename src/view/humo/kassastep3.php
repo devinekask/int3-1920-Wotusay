@@ -17,12 +17,12 @@ Humokassa
 <div class="line"></div></div>
 <div class="progress-steps">
 <div class="step__wrapper">
-<a class="underline__gone" href="">
+<a class="underline__gone" href="index.php?page=kassastep2">
 <span class="information__step information__step--active">Gegevens</span>
 <span class="number__step number__step--active">1</span></a>
 </div>
 <div class="step__wrapper">
-<a class="underline__gone" href="">
+<a class="underline__gone" href="index.php?page=kassastep3">
 <span class="information__step information__step--active">Betaalwijze</span>
 <span class="number__step number__step--active">2</span></a>
 </div>

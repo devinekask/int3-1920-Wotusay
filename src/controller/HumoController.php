@@ -118,6 +118,7 @@ class HumoController extends Controller {
   private function _handleAdd() {
     if (empty($_SESSION['winkelmandje'][$_POST['product_id']])) {
       $product = $this->humoDAO->selectById($_POST['product_id']);
+      $version = $this->detailDAO->selectVersionsByOption($_POST['version']);
       if (empty($product)) {
         return;
       }

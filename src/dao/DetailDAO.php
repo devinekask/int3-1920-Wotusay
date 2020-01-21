@@ -18,6 +18,14 @@ class DetailDAO extends DAO {
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
+
+  public function selectVersionsByOption($option) {
+    $sql = "SELECT * FROM `humo_versies` WHERE `id` = :option";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':option', $option);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
 }
 
 ?>
