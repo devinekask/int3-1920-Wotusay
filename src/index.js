@@ -1,8 +1,12 @@
 require('./style.css');
+import '../src/js/validate.js';
 
 const optionSwitcher = () => {
   const $options = document.querySelector(`.js-option`);
-  $options.addEventListener(`input`, handleInputs);
+
+  if ($options) {
+    $options.addEventListener(`input`, handleInputs);
+  }
 };
 
 const handleInputs = e => {
