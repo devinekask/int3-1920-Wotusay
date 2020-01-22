@@ -80,9 +80,17 @@ Humokassa
       <div class="overview__items">
     <?php
           $total = 0;
-          $korting= 4.50;
+          $calc = 0;
+
           if ($numItems == 0 ){ echo 'Er zit niets in je winkelmandje'; } else {
           foreach($_SESSION['winkelmandje'] as $item) {
+            $calc = 8 * $item['quantity'];
+            if ($item['product']['filter']  == '1') {
+              $calc = 8;
+             $korting =  $calc * $item['quantity'];
+            } else {
+                $korting = 0;
+              }
             $itemTotal = $item['product']['price'] * $item['quantity'];
             $total += $itemTotal;
           ?>

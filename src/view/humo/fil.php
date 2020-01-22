@@ -11,8 +11,12 @@
 <div class="container">
 <div class="title__wrapper">
 <h2 class="longread__title">
+
+<?php if (empty($_GET['id']) || $_GET['id'] > 3) {
+  header('Location: index.php');
+} else { ?>
 <?php if($_GET['id'] == '1') { echo 'Boeken' ?>
-<?php } elseif($_GET['id'] == '2') { echo 'Boeken Accessoires' ?> <?php } elseif($_GET['id'] == '3') { echo 'Agenda'?> <?php } ?>
+<?php } elseif($_GET['id'] == '2') { echo 'Boeken Accessoires' ?> <?php } elseif($_GET['id'] == '3') { echo 'Agenda'?> <?php } } ?>
 </h2>
 <div class="line"></div></div>
 <?php if($_GET['id'] == '1') {  ?>

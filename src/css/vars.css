@@ -18,6 +18,5 @@
 }
 
 @custom-media --small-screen (width <= 500px);
-@custom-media --big-screen (width <= 1200px);
+@custom-media --big-screen (width <= 1400px);
 @custom-media --mobile-screen (width <= 360px);
-

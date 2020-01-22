@@ -8,7 +8,7 @@
   <li class="filter-item"><a class="filter-link" href="index.php?page=winkelmandje"><svg height="24" viewBox="0 0 32 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m1.70573828.00811647c-1.10456948.17673113-1.85673109 1.21543051-1.67999997 2.31999999.17673112 1.10456949 1.21543048 1.85673111 2.31999997 1.68000001h6l.36 1 1.64000002 5.00000003 1.64 5c.16.52.84 1 1.36 1h14c.56 0 1.2-.48 1.36-1l3.24-10.00000003c.16-.52-.08-1-.64-1h-17.76l-1.52-2.88c-.3300771-.67396607-1.0096687-1.10643342-1.76-1.12h-8.00000002c-.11975601-.01082196-.24024399-.01082196-.36 0-.07992787-.00480433-.16007213-.00480433-.24 0zm12.64000002 20.00000003c-1.12 0-2 .88-2 2s.88 2 2 2 2-.88 2-2-.88-2-2-2zm12 0c-1.12 0-2 .88-2 2s.88 2 2 2 2-.88 2-2-.88-2-2-2z" fill="#ee0a0d"/></svg></a></li>
 </ul>
 </nav>
-<a class="price__button" href="<?php if($item['id'] === 18) {?> index.php <?php }else{ ?>index.php?page=fil&id=<?php echo $item['filter']; } ?> ">Terug</a>
+<a class="price__button" href="<?php if($item['id'] === 18) {?> index.php <?php } if($item['id'] < 41 && $item['id'] > 30)  { ?> index.php?page=fil&id=1 <?php } else{ ?>index.php?page=fil&id=<?php echo $item['filter']; } ?> ">Terug</a>
 <h2 class="detail__title"><?php echo $item['name'] ?></h2>
 <div class="item__wrapper">
 <div class="img__wrapper">
@@ -20,9 +20,13 @@
 <form action="index.php?page=winkelmandje" method="post">
 <div class="productinformation__wrapper">
 <div class="flex__wrapper">
-<?php if ( $item['id'] === 12 ||  $item['id'] === 10 ||  $item['id']  < 18 && $item['filter'] === 1 ) {?>
+<?php if ( $item['id'] === 12 ||  $item['id'] === 10 ||  $item['id']  < 18 && $item['filter'] === 1 || $item['id'] < 41 && $item['filter'] === 4 || $item['filter'] === 0) {?>
 <span class="red-text">Kies je versie</span>
-<select name="versie" id="versie">
+<select class="js-option" name="versie" id="versie">
+<?php if ($item['id'] < 41 && $item['filter'] === 4) {  ?>
+  <option checked value="<?php echo $version['optie 2'] ?>"><?php echo $version['optie 2'] ?></option>
+  <option checked value="<?php echo $version['optie 1'] ?>"><?php echo $version['optie 1'] ?></option>
+<?php } else { ?>
 <option checked value="<?php echo $version['optie 1'] ?>"><?php echo $version['optie 1'] ?></option>
 <option value="<?php echo $version['optie 2'] ?>"><?php echo $version['optie 2'] ?></option>
 <?php if ($version['optie 3'] === "-" &&  $version['optie 4'] === "-"){} else { ?>
@@ -30,16 +34,17 @@
 <?php if ($version['optie 4'] === "-"){} else { ?>
 <option value="<?php echo $version['optie 4'] ?>"><?php echo $version['optie 4'] ?></option>
 <?php } ?>
+<?php } ?>
 <?php }?>
 
 </select>
 <?php } elseif ($item['id'] === 19) {} ?>
 </div>
 <div class="flex__wrapper">
-<span class="bold">€<?php echo money_format("%i", $item['price']); if($item['id'] === 18) { ?> /maand <?php }?> </span>
+<span class="price-books-js bold">€<?php echo money_format("%i", $item['price']); if($item['id'] === 18) { ?> /maand <?php }?> </span>
 <span class="vooraad">Op vooraad</span>
 </div>
-<input type="hidden" name="product_id" value="<?php echo $item['id'];?>">
+<input type="hidden" class="hidden-js" name="product_id" value="<?php echo $item['id'];?>">
 <button type="submit" name="action" value="add" class="button__bestel">Bestel</button>
 <p class="service">Voor 20:00 besteld <span class="red">morgen</span> in huis</p>
 <p class="service"><span class="red">Gratis retourneren </span> binnen de 30 dagen</p>

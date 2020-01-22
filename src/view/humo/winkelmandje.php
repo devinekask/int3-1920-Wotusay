@@ -65,7 +65,8 @@ Winkelmandje
 if (!empty($_GET['code'])){
  if ($_GET['code'] === 'Thebooks33') {
    if ($item['product']['filter']  == '1') {
-      $korting = 4.50;
+      $calc = 8;
+     $korting =  $calc * $item['quantity'];
     } else {
         $korting = 0;
       }
@@ -114,7 +115,7 @@ if (!empty($_GET['code'])){
 
       <button class="submit-total" type="submit" name="action" value="checkout"> Verder naar bestelling </button>
       </div>
-</form>
+    </form>
     </div>
     </div>
     </div>
