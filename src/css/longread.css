@@ -1,0 +1,167 @@
+.background {
+  background-color: var(--colorBackground);
+  color: white;
+  font-family: "BlenderPro";
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+h1 {
+  font-size: 15rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 8px 0 0 var(--colorPink), -8px 0 0 var(--colorBlue);
+  animation-name: glitch;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.longread--img {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.longread--title {
+  z-index: 1;
+  display: grid;
+  justify-content: center;
+  margin-bottom: -98rem;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.longread-container {
+  width: 144rem;
+  margin: 0 auto;
+}
+
+.indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -18rem;
+}
+
+.splitter {
+  margin-top: -4rem;
+}
+
+@keyframes glitch {
+
+  25% {
+    text-shadow: -8px 0 0 var(--colorPink), 8px 0 0 var(--colorBlue);
+  }
+
+  50% {
+    text-shadow: 8px 5px 0 var(--colorPink), -8px -5px 0 var(--colorBlue);
+  }
+
+  75% {
+    text-shadow: -8px 0 0 var(--colorPink), 8px 0 0 var(--colorBlue);
+  }
+
+  100% {
+    text-shadow: 8px 5px 0 var(--colorPink), -8px -5px 0 var(--colorBlue);
+  }
+}
+
+.chapter-line {
+  border-left: solid  1.4rem;
+  padding: 1.4rem;
+
+  & h2 {
+    font-weight: bold;
+    font-size: 10rem;
+  }
+
+  & p {
+    font-size: 5.1rem;
+    font-weight: bold;
+  }
+
+  & .yellow {
+    color: var(--colorYellow);
+  }
+}
+
+.purple--line {
+  border-left: solid 1.4rem var(--colorPurple);
+
+  & .purple {
+    color: var(--colorPurple);
+  }
+}
+
+.red--line {
+  border-left: solid 1.4rem var(--colorRed);
+
+  & .red {
+    color: var(--colorRed);
+  }
+}
+
+.line--green {
+  border-left: solid 1.4rem var(--colorTerminal);
+
+  & .green {
+    color: var(--colorTerminal);
+  }
+}
+
+.line-yellow {
+  border-left: solid 1.4rem var(--colorYellow);
+}
+
+.blink {
+  opacity: 1;
+  animation-name: blink;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.longread--textwrapper {
+  display: grid;
+  grid-template-columns: 65rem;
+  grid-gap: 7.5rem;
+  justify-content: center;
+  margin-top: 7.5rem;
+}

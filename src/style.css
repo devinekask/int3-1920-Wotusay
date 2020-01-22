@@ -9,6 +9,28 @@
 @import './css/winkelmandje.css';
 @import './css/kassa.css';
 @import './css/responsive.css';
+@import './css/longread.css';
+
+@font-face {
+  font-family: BlenderPro;
+  src: url(assets/fonts/Blender-Pro-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BlenderPro;
+  src: url(assets/fonts/Blender-Pro-Book.ttf);/* Modern Browsers */
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Fsex;
+  src: url(assets/fonts/FSEX300.ttf); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
   height: 100%;

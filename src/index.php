@@ -47,8 +47,11 @@ $routes = array(
   'confermation' => array(
     'controller' => 'Humo',
     'action' => 'confermation'
+  ),
+  'longread' => array(
+    'controller' => 'Humo',
+    'action' => 'longread'
   )
-
 );
 
 if(empty($_GET['page'])) {

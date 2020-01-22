@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,8 +12,11 @@
     <title>Humo - <?php echo $title; ?></title>
     <?php /* NEW */ ?>
     <?php echo $css;?>
+
   </head>
+
   <body>
+  <?php if($title === 'Longread') { echo $content; } else { ?>
       <header class="header">
       <h1 class="hidden">Humo</h1>
       <div class="sub-nav">
@@ -135,6 +139,7 @@ tijd</a></li></ul>
     </div>
      </div>
     </footer>
+    <?php } ?>
     <?php echo $js; ?>
   </body>
 </html>

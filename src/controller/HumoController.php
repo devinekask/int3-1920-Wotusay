@@ -219,4 +219,8 @@ class HumoController extends Controller {
   public function confermation() {
     $this->set('title', 'Kassa');
   }
+
+  public function longread() {
+    $this->set('title', 'Longread');
+  }
 }

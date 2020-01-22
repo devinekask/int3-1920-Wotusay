@@ -14,7 +14,16 @@
   --basicSize: 2rem;
   --buySize: 2.5rem;
   --smallSize: 1.4rem;
-  /*font weight*/
+  /*Colors Longread*/
+  --colorBackground: #020314;
+  --colorBlue: #0c01b3;
+  --colorPink: #e8007b;
+  --colorPurple: #5a31e6;
+  --colorTerminal: #32f50d;
+  --colorBar: #bdbdbd;
+  --colorLightPurple: #e032e6;
+  /*fontsize longread*/
+
 }
 
 @custom-media --small-screen (width <= 500px);
