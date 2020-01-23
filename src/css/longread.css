@@ -1,3 +1,4 @@
+
 .background {
   background-color: var(--colorBackground);
   color: white;
@@ -6,7 +7,7 @@
   font-size: 4rem;
 }
 
-h1 {
+.neuromancer {
   font-size: 15rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -35,7 +36,7 @@ h1 {
 }
 
 .black-background {
-  background-color: black;
+  background-color: #030304;
 }
 
 .longread-container {
@@ -51,6 +52,7 @@ h1 {
 
 .splitter {
   margin-top: -4rem;
+  position: absolute;
 }
 
 @keyframes glitch {
@@ -190,4 +192,228 @@ h1 {
   font-family: Fsex;
   font-size: 5rem;
   letter-spacing: -0.27px;
+}
+
+.progress-bar {
+  z-index: 1;
+  position: sticky;
+  left: 0;
+  top: 100px;
+  margin-bottom: -45rem;
+  margin-top: 2rem;
+  margin-left: 7rem;
+  width: 10rem;
+
+}
+
+.progressbar-item {
+  display: grid;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+.progressbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 2.1rem;
+}
+
+.rectangle-border {
+  border: solid 2px;
+  width: 5.5rem;
+  height: 5.5rem;
+  position: absolute;
+  z-index: -1;
+  margin-top: 1rem;
+  transform: rotate(-315deg);
+  background-color: var(--colorBackground);
+}
+
+.progressbar-progress {
+  font-size: 1.7rem;
+  margin-left: -5px;
+  margin-bottom: 1rem;
+}
+
+.longread-bookbuyer {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: -2rem;
+  font-weight: bold;
+
+  &:hover {
+    animation-name: glitch;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+.progressbar-bookbuyer {
+  margin-top: -7rem;
+}
+
+.longread-footer {
+  border: none;
+  background-color: #030304;
+  margin-top: unset;
+}
+
+.logo-longread {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.glitch {
+  animation-name: glitch;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.infobalk {
+  background-color: #bdbdbd;
+  height: 5.4rem;
+  color: black;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+
+}
+
+.terminal--text {
+  background-color: black;
+  box-shadow: inset 1px 7px 43px 38px rgba(64, 64, 64, 0.5);
+  height: 106.5rem;
+  font-size: 4rem;
+  color: var(--colorTerminal);
+  font-family: Fsex;
+  display: flex;
+  justify-content: center;
+  padding-left: 30rem;
+  padding-bottom: 26rem;
+  flex-flow: column;
+  padding-top: 4rem;
+
+  & p {
+    margin-top: 1rem;
+  }
+
+  & .opening {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.end {
+  font-size: 10rem;
+  font-family: Fsex;
+  color: var(--colorTerminal);
+  z-index: 1;
+  position: absolute;
+  margin-top: 60rem;
+  margin-left: 50rem;
+}
+
+.container-second {
+  width: 96rem;
+  margin: 0 auto;
+}
+
+.longread-indicator {
+  width: 65.2rem;
+}
+
+@keyframes shake {
+
+  10%, 90% {
+    margin-left: 1px;
+  }
+
+  20%, 80% {
+    margin-right: 0;
+
+  }
+
+  30%, 50%, 70% {
+    margin-right: 2px;
+  }
+
+  40%, 60% {
+    margin-left: 0;
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-duration: 200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.flickering {
+  animation-name: colorhopper;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes colorhopper {
+
+  10%, 90% {
+    color: white;
+  }
+
+  20%, 80% {
+    color: var(--colorTerminal);
+  }
+
+  30%, 50%, 70% {
+    color: var(--colorTerminal);
+  }
+
+  40%, 60% {
+    color: white;
+  }
+}
+
+.terminal-anim {
+  animation-name: terminal;
+  animation-duration: 1ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes terminal {
+
+  25% {
+    color: black;
+  }
+
+  50% {
+    color: var(--colorTerminal);
+  }
+
+  75% {
+    color: black;
+  }
+
+}
+
+.third-terminal {
+  margin-top: 10rem;
+}
+
+.second-terminal {
+  margin-top: 10rem;
+}
+
+.frist-terminal {
+  margin-top: 10rem;
 }

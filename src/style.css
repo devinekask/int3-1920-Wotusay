@@ -10,6 +10,7 @@
 @import './css/kassa.css';
 @import './css/responsive.css';
 @import './css/longread.css';
+@import './css/longreadresponsive.css';
 
 @font-face {
   font-family: BlenderPro;
@@ -36,6 +37,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 /* stylelint-disable */
 *,
@@ -185,4 +187,8 @@ body {
   padding: 1rem;
   border-radius: 6px;
   margin-bottom: 1rem;
+}
+
+.js-hidden {
+  display: none;
 }

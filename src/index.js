@@ -1,6 +1,70 @@
 require('./style.css');
 import '../src/js/validate.js';
 
+const fristOption = 'Click me twice to open the file';
+const secondOption = 'Click me to enter the matrix';
+
+const terminalInteraction = () => {
+  const $terminal1 = document.querySelectorAll(`.terminal-buttons-1`);
+  if ($terminal1) {
+    $terminal1.forEach(button => {
+      button.addEventListener(`click`, clickHandler);
+    });
+  }
+
+  const $terminal2 = document.querySelectorAll(`.terminal-buttons-2`);
+  if ($terminal2) {
+    $terminal2.forEach(button => {
+      button.addEventListener(`click`, clickHandlerNextChapter);
+    });
+  }
+
+  const $terminal3 = document.querySelectorAll(`.terminal-buttons-3`);
+  if ($terminal3) {
+    $terminal3.forEach(button => {
+      button.addEventListener(`click`, clickHandlerLastChapter);
+    });
+  }
+};
+
+const clickHandlerLastChapter = e => {
+  const $chapter4 = document.querySelector(`.third-terminal`);
+  const html = e.currentTarget.innerText;
+  const scrollToChaper3 = document.getElementById('4').scrollIntoView();
+  if (html === fristOption) {
+    $chapter4.classList.remove(`js-hidden`);
+    scrollToChaper3;
+  } if (html === secondOption) {
+    console.log(`wait`);
+  }
+};
+
+const clickHandlerNextChapter = e => {
+  const $chapter3 = document.querySelector(`.second-terminal`);
+  const html = e.currentTarget.innerText;
+  const scrollToChaper3 = document.getElementById('3').scrollIntoView();
+  if (html === fristOption) {
+    $chapter3.classList.remove(`js-hidden`);
+    scrollToChaper3;
+  } if (html === secondOption) {
+    console.log(`wait`);
+  }
+};
+
+const clickHandler = e => {
+  console.log(e.currentTarget.innerText);
+  const html = e.currentTarget.innerText;
+  const $chapter2 = document.querySelector(`.frist-terminal`);
+  const scrollToChaper2 = document.getElementById('2').scrollIntoView();
+  if (html === fristOption) {
+    $chapter2.classList.remove(`js-hidden`);
+    scrollToChaper2;
+  } if (html === secondOption) {
+    console.log(`wait`);
+  }
+
+};
+
 const optionSwitcher = () => {
   const $options = document.querySelector(`.js-option`);
 
@@ -153,6 +217,7 @@ const init = () => {
   pictureSwitcher();
   optionSwitcher();
   infoButton();
+  terminalInteraction();
 };
 
 init();

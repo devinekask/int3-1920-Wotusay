@@ -1,0 +1,331 @@
+
+@media (--longread-med-screen) {
+
+  .longread-indicator {
+    width: 44.5rem;
+  }
+
+  .longread-container {
+    width: 102.4rem;
+  }
+
+  .splitter {
+    margin-top: -5rem;
+
+    & svg {
+      max-width: 102.4rem;
+    }
+  }
+
+  .container-second {
+    width: 70rem !important;
+  }
+
+  .splitter-top {
+    margin-top: -2rem;
+
+    & svg {
+      max-width: 102.4rem;
+    }
+  }
+
+  .longread--textwrapper {
+    grid-gap: 3rem;
+  }
+
+  .subtitle-longread {
+    margin-top: 1rem;
+    margin-left: 20rem;
+  }
+
+  .chatbox {
+    margin-left: 20rem;
+    margin-top: 35rem;
+    font-size: 4rem;
+  }
+
+  .video {
+    width: 100vw;
+  }
+
+  .terminal--text {
+    padding-left: 17rem;
+  }
+
+  .spliter-vid {
+    margin-top: 4rem;
+  }
+
+  .spliter-vid-bot {
+    margin-top: -18rem;
+  }
+
+  .spliter-vid-top {
+    margin-top: -18rem;
+  }
+
+  .end {
+    margin-top: 45rem;
+    margin-left: 30rem;
+  }
+
+  .progress-bar {
+    top: 20px;
+  }
+}
+
+@media (--longread-tablet-screen) {
+
+  .longread-container {
+    width: 76.8rem;
+  }
+
+  .longread--title {
+    margin-bottom: -65rem;
+  }
+
+  .neuromancer {
+    font-size: 15vw;
+  }
+
+  .longread-indicator {
+    width: 35.5rem;
+  }
+
+  .splitter-top {
+    margin-top: -4rem;
+
+    & svg {
+      max-width: 76.8rem !important;
+    }
+  }
+
+  .splitter {
+
+    & svg {
+      max-width: 76.8rem !important;
+    }
+  }
+
+  .chatbox {
+    margin-left: 6rem;
+  }
+
+  .progress-bar {
+    margin: unset;
+    width: unset;
+    top: 0;
+    background-color: var(--colorBackground);
+    height: 10rem;
+    padding: 1rem;
+    z-index: 2;
+  }
+
+  .progressbar {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .progressbar-bookbuyer {
+    margin: unset;
+    margin-top: 1rem;
+  }
+
+  .progressbar-progress {
+    margin-top: 3rem;
+  }
+
+  .longread--textwrapper {
+    grid-gap: 2rem;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle-longread {
+    font-size: 4rem;
+    margin-left: 23rem;
+    margin-top: unset;
+  }
+
+  .video {
+    height: 57vw;
+  }
+
+  .spliter-vid-bot {
+    margin-top: -10rem;
+  }
+
+  .spliter-vid-top {
+    margin-top: -10rem;
+  }
+
+  .terminal--text {
+    padding-left: 4rem;
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+    font-size: 3rem;
+    height: unset;
+  }
+
+  .end {
+    margin-top: 41rem;
+    margin-left: 21rem;
+  }
+}
+
+@media (--longread-mobile-screen) {
+
+  .longread-container {
+    width: 32rem;
+  }
+
+  .longread-indicator {
+    width: 14.5rem;
+    opacity: 0;
+  }
+
+  .splitter-top {
+    margin-top: -5rem;
+
+    & svg {
+      max-width: 32rem !important;
+    }
+  }
+
+  .progressbar-progress {
+    display: none;
+  }
+
+  .splitter {
+    margin-top: -8rem;
+
+    & svg {
+      max-width: 32rem !important;
+    }
+  }
+
+  .chatbox {
+    width: 15rem;
+    font-size: 2rem;
+    margin-top: 7rem;
+    margin-left: 17rem;
+  }
+
+  .end {
+    margin-top: 30rem;
+    margin-left: 9rem;
+    font-size: 4rem;
+  }
+
+  .container-second {
+    width: 30rem !important;
+  }
+
+  .progress-bar {
+    height: 15rem;
+    padding-top: 2rem;
+  }
+
+  .progressbar {
+    grid-template-columns: 8rem 8rem 8rem 5rem;
+    grid-template-rows: 5rem 3rem;
+  }
+
+  .progressbar-bookbuyer {
+    grid-column: 1 / span 4;
+    margin-top: 2rem;
+  }
+
+  .longread-bookbuyer {
+    margin-top: 4rem;
+    margin-left: 9rem;
+  }
+
+  .progressbar-item {
+    padding-bottom: unset;
+  }
+
+  .longread--textwrapper {
+    grid-template-columns: 25rem;
+    font-size: 2rem;
+  }
+
+  .chapter-line {
+
+    & h2 {
+      font-size: 5rem;
+    }
+
+    & p {
+      font-size: 3rem;
+    }
+  }
+
+  .purple--line {
+    border-left: solid 1rem var(--colorPurple);
+  }
+
+  .red--line {
+    border-left: solid 1rem var(--colorRed);
+  }
+
+  .line--green {
+    border-left: solid  1rem var(--colorTerminal);
+  }
+
+  .line-yellow {
+    border-left: solid 1rem var(--colorYellow);
+  }
+
+  .subtitle-longread {
+    margin-left: 8rem;
+    font-size: 2rem;
+  }
+
+  .video {
+    height: 73vw;
+    width: 100vw;
+  }
+
+  .infobalk {
+    font-size: 1.6rem;
+    height: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  .terminal--text {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+
+  .longread--title {
+    margin-bottom: -35rem;
+  }
+
+  .author {
+    font-size: 2rem;
+  }
+
+  .spliter-vid {
+    margin-top: -4rem;
+  }
+
+  .spliter-vid-top {
+    margin-top: -9rem;
+  }
+
+  .third-terminal {
+    margin-top: 5rem;
+  }
+
+  .second-terminal {
+    margin-top: 5rem;
+  }
+
+  .frist-terminal {
+    margin-top: 5rem;
+  }
+}
