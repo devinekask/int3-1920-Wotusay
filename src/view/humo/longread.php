@@ -21,7 +21,8 @@
 <svg height="44" viewBox="0 0 30 44" width="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="#fff"><rect height="4" rx="1" width="4" y="31"/><rect height="4" rx="1" width="4" x="6" y="36"/><rect height="4" rx="1" width="4" x="13" y="40"/><rect height="4" rx="1" width="4" x="20" y="36"/><rect height="4" rx="1" width="4" x="26" y="31"/></g><path d="m15.5 31v-29" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="3"/></g></svg>
 <svg height="26" viewBox="0 0 652 26" width="652" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#4b4b4b" stroke-width="2" transform="matrix(-1 0 0 1 653 1)"><path d="m0 12h639"/><path d="m652 0-12 12 12 12"/></g></svg>
 </div></div>
-<div class="splitter"><svg height="123" viewBox="0 0 1440 123" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#020314" fill-rule="evenodd" transform="translate(-20 1)"><path d="m361 119h-341v-91h341v-.682l90.593-27.318h577.814l90.593 27.318v-.318h341v91h-341v-14h-759z" stroke="#4b4b4b" stroke-width="2"/><path d="m0 29h1470v93h-1470z"/></g></svg>
+<div class="splitter">
+  <svg height="123" viewBox="0 0 1440 123" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#020314" fill-rule="evenodd" transform="translate(-20 1)"><path d="m361 119h-341v-91h341v-.682l90.593-27.318h577.814l90.593 27.318v-.318h341v91h-341v-14h-759z" stroke="#4b4b4b" stroke-width="2"/><path d="m0 29h1470v93h-1470z"/></g></svg>
 </div>
 <div class="progress-bar">
 <ul class="progressbar">
@@ -43,10 +44,24 @@
 <p>The Chatsubo was a bar for professional expatriates; you could drink there for aweek and never hear two words in Japanese. Ratz was tending bar, his prosthetic arm jerking monotonously as he illed a tray of glasses with draft Kirin. He saw Case and smiled, his teeth a web work of East European steel and brown decay. Case found a place at the bar. </p>
   </div>
   <span class="subtitle-longread">The Chatsubo<span class=blink>_</span></span>
-  <div class="splitter-top"></div>
-  <img src="" alt="">
+  </div>
+  <div class="splitter-top">
+  <svg height="123" viewBox="0 0 1440 123" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#020314" fill-rule="evenodd" transform="matrix(1 0 0 -1 -15 122)"><path d="m1461 27v91h-342v-91zm-1104 92h-342v-91h342l.000597-.683 90.95-27.317h580.098803l90.95 27.317.0006 76.683h-762z" stroke="#4b4b4b" stroke-width="2"/><path d="m0 29h1470v93h-1470z"/></g></svg>
+  </div>
+  <div class="longread--img">
+  <picture>
+    <source media="(min-width: 1440px)" srcset="../assets/img/bar.png">
+    <source media="(min-width: 1024px)" srcset="../assets/img/bar-med.png">
+    <source media="(min-width: 720px)" srcset="../assets/img/bar-tabpng.png">
+    <source media="(min-width: 360px)" srcset="../assets/img/bar-phone.png">
+    <img class="postion" src="../assets/img/bar.png" alt="bar">
+  </picture>
   <p class="chatbox">"Wage was in here early, with two Joe boys, maybe some business with you, Case?</p>
-  <div class="splitter"></div>
+</div>
+  <div class="splitter">
+  <svg height="123" viewBox="0 0 1440 123" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#020314" fill-rule="evenodd" transform="translate(-20 1)"><path d="m361 119h-341v-91h341v-.682l90.593-27.318h577.814l90.593 27.318v-.318h341v91h-341v-14h-759z" stroke="#4b4b4b" stroke-width="2"/><path d="m0 29h1470v93h-1470z"/></g></svg>
+  </div>
+  <div class="container">
   <div class="longread--textwrapper">
   <p>The bartender’s smile widened. His ugliness was the stuff of legend. In an age of affordable beauty, there was something heraldic about his lack of it. The antique arm whined as he reached for another mug. It was a Russian military prosthesis, a seven-function force-feedback manipulator, cased in grubby pink plastic. "You are too much the artiste, Herr Case." Ratz grunted; the sound served him as laughter. He scratched his overhang of white-shirted belly with the pink claw. "You are the artiste of the slightly funny deal."</p>
   <p>"Sure," Case said, and sipped his beer. "Somebody’s gotta be funny around here. Sure the fuck isn’t you." The whore’s giggle went up an octave."Isn’t you either, sister. So you vanish, okay? Zone, he’s a close personal friend of mine."She looked Case in the eye and made the softest possible spitting sound, her lips barely moving. But she left. "Jesus," Case said, "what kind a creep joint you running here? Man can’t have a drink." "Ha," Ratz said, swabbing the scarred wood with a rag, "Zone shows a percentage. You I let work here for entertainment value." As Case was picking up his beer, one of those strange instants of silence descended, as though a hundred unrelated conversations had simultaneously arrived at the same pause. Then the whore’s giggle rang out, tinged with a certain hysteria. Ratz grunted. "An angel passed." "The Chinese," bellowed a drunken Australian, "Chinese bloody invented nerve-splicing. Give me the mainland for a nerve job any day. Fix you right, mate . . ." "Now that," Case said to his glass, all his bitterness suddenly rising in him like bile, "that is so much bullshit."The Japanese had already forgotten more neurosurgery than the Chinese had ever known. The black clinics of Chiba were the cutting edge, whole bodies of technique supplanted monthly, and still they couldn’t repair the damage he’d suffered in that Memphis hotel.</p>
@@ -55,13 +70,13 @@
   <div class="splitter-top"></div>
   <img src="" alt="">
   <p class="chatbox"></p>
-  <div class="splitter"></div>
-
+  <div class="splitter">
+  </div>
   <div class="longread--textwrapper">
   <p>The Japanese had already forgotten more neurosurgery than the Chinese had ever known. The black clinics of Chiba were the cutting edge, whole bodies of technique supplanted monthly, and still they couldn’t repair the damage he’d suffered in that Memphis hotel. A year here and he still dreamed of cyberspace, hope fading nightly. All the speed he took, all the turns he’d taken and the corners he’d cut in Night City, and still he’d see the matrix in his sleep, bright lattices of logic unfolding across that colorless void . . . The Sprawl was a long strange way home over the Paci􏰀ic now, and he was no console man, no cyberspace cowboy. Just another hustler, trying to make it through. But the dreams came on in the Japanese night like live wire voodoo and he’d cry for it, cry in his sleep, and wake alone in the dark, curled in his capsule in some cof􏰀in hotel, his hands clawed into the bedslab, temper foam bunched between his 􏰀ingers, trying to reach the console that wasn’t there.</p>
-  </div>
+  </div></div>
 </section>
-</div>
+
 <section class="terminal">
 <h2 class="hidden">Terminal</h2>
 <div class="infobalk">
