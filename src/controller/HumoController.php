@@ -105,14 +105,20 @@ class HumoController extends Controller {
 
 
   private function _handleCheckout() {
+    if ($numItems === 0) { header('Location: index.php?page=winkelmandje');
+    } else{
     header('Location: index.php?page=kassa');
     exit();
+    }
   }
 
   private function _handleCheckoutOverview() {
+    if ($numItems === 0) { header('Location: index.php?page=winkelmandje');
+    } else{
     $_SESSION['winkelmandje'] = array();
     header('Location: index.php?page=confermation');
     exit();
+    }
   }
 
   private function _handleAdd() {

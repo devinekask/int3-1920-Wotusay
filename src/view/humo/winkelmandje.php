@@ -112,14 +112,11 @@ if (!empty($_GET['code'])){
       <p class="bold">€<?php echo money_format("%i", $total - $korting); ?> </p>
       <?php  } ?></div>
       <form action="index.php?page=winkelmandje" method="post" id="cartform" class="js-form">
-
       <button class="submit-total" type="submit" name="action" value="checkout"> Verder naar bestelling </button>
-      </div>
     </form>
     </div>
     </div>
     </div>
     <div class="container align-right">
     <img class="payment" src="assets/img/payment.png" alt="payment"></div>
-  </div>
 </section>
