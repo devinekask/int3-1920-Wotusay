@@ -32,4 +32,4 @@
 @custom-media --longread-orignal-screen (width <= 1440px);
 @custom-media --longread-med-screen (width <= 1024px);
 @custom-media --longread-tablet-screen (width <= 768px);
-@custom-media --longread-mobile-screen (width <= 320px);
+@custom-media --longread-mobile-screen (width <= 420px);

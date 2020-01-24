@@ -187,6 +187,10 @@
     opacity: 0;
   }
 
+  .neuromancer {
+    font-size: 5rem;
+  }
+
   .splitter-top {
     margin-top: -5rem;
 
@@ -286,8 +290,8 @@
   }
 
   .video {
-    height: 73vw;
-    width: 100vw;
+    height: 21.4rem;
+    width: 32rem;
   }
 
   .infobalk {
