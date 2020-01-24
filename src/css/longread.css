@@ -189,7 +189,7 @@
   background-color: rgba(0, 0, 0, 0.753);
   padding: 2rem;
   color: var(--colorTerminal);
-  font-family: Fsex;
+  font-family: "Fsex";
   font-size: 5rem;
   letter-spacing: -0.27px;
 }
@@ -293,7 +293,7 @@
   height: 106.5rem;
   font-size: 4rem;
   color: var(--colorTerminal);
-  font-family: Fsex;
+  font-family: "Fsex";
   display: flex;
   justify-content: center;
   padding-left: 30rem;
@@ -313,7 +313,7 @@
 
 .end {
   font-size: 10rem;
-  font-family: Fsex;
+  font-family: "Fsex";
   color: var(--colorTerminal);
   z-index: 1;
   position: absolute;
@@ -416,4 +416,87 @@
 
 .frist-terminal {
   margin-top: 10rem;
+}
+
+.progressbar-link--active {
+  color: #5a31e6;
+}
+
+.rectangle-border--active {
+  border: solid 2px #5a31e6;
+}
+
+.bookbuyer {
+  color: white;
+
+  &:hover {
+    animation-name: glitch;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+.scifi {
+  animation-name: scifi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scifi {
+
+  25% {
+    color: var(--colorBlue);
+    margin-left: 2px;
+  }
+
+  50% {
+    color: var(--colorTerminal);
+    margin-left: 0;
+
+  }
+
+  75% {
+    color: var(--colorBlue);
+    margin-right: 2px;
+
+  }
+
+}
+
+.chars {
+  animation-name: chars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  color: var(--colorBackground);
+
+}
+
+@keyframes chars {
+
+  25% {
+    text-shadow: -8px 0 0 var(--colorBlue), 8px 0 0 var(--colorPink);
+    color: var(--colorBackground);
+
+  }
+
+  50% {
+    text-shadow: 8px 5px 0 var(--colorPink), -8px -5px 0 var(--colorPurple);
+    color: var(--colorBackground);
+
+  }
+
+  75% {
+    text-shadow: -8px 0 0 var(----colorPurple), 8px 0 0 var(--colorBlue);
+    color: var(--colorBackground);
+  }
+
+  100% {
+    text-shadow: 8px 5px 0 var(--colorBlue), -8px -5px 0 var(--colorPink);
+    color: var(--colorBackground);
+
+  }
+
 }

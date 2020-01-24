@@ -54,7 +54,7 @@
 <div class="longread__information">
 <span class="genre">roman</span>
 <p class="desc">Neuromancer is een roman uit 1984. Dit boek heeft namelijk voor het eerst de cyberpunk genre uit heeft gehaalt. Dit boek won een aantal prijzen. Zoals de nebula award en de Hugo award.</p>
-<a class="longread__information--link" href="">Ontdek de longread</a>
+<a class="longread__information--link" href="index.php?page=longread">Ontdek de longread</a>
 </div>
 <?php }?>
 </div>

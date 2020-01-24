@@ -8,7 +8,7 @@
 </p>
 <a class="price__button" href="index.php?page=detail&id=1">Bestel | €13,50</a>
 </div></div>
-<a class="longread__button" href="">Ontdek de longread</a>
+<a class="longread__button" href="index.php?page=longread">Ontdek de longread</a>
 </article>
 <section class="shop">
 <h2 class="hidden">shop</h2>

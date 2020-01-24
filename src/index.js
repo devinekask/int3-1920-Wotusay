@@ -1,8 +1,67 @@
 require('./style.css');
 import '../src/js/validate.js';
+import TypeIt from 'typeit';
+
+new TypeIt('.chatbox', {
+  cursorChar: '_',
+  waitUntilVisible: true
+}).go();
 
 const fristOption = 'Click me twice to open the file';
 const secondOption = 'Click me to enter the matrix';
+
+const navLeft = () => {
+  const $navItems = document.querySelectorAll(`.progressbar-link`);
+
+  if ($navItems) {
+    $navItems.forEach(nav => {
+      nav.addEventListener(`click`, navItemHandler);
+    });
+  }
+};
+
+const navItemHandler = e => {
+  const html = e.currentTarget.innerText;
+  const $step4 = document.querySelector(`.terminal-step3`);
+  const $step4Rectangle = document.querySelector(`.rect-terminal-step3`);
+  const $chapter4 = document.querySelector(`.third-terminal`);
+  const $step3 = document.querySelector(`.terminal-step2`);
+  const $step3Rectangle = document.querySelector(`.rect-terminal-step2`);
+  const $chapter3 = document.querySelector(`.second-terminal`);
+  const $step2 = document.querySelector(`.terminal-step1`);
+  const $step2Rectangle = document.querySelector(`.rect-terminal-step1`);
+  const $chapter2 = document.querySelector(`.frist-terminal`);
+
+  if (html === '1') {
+    console.log(true);
+  } if (html === '2') {
+    $chapter2.classList.remove(`js-hidden`);
+    $step2.classList.add(`progressbar-link--active`);
+    $step2Rectangle.classList.add(`rectangle-border--active`);
+    $step2.classList.remove(`terminal-step1`);
+    $step2Rectangle.classList.remove(`rect-terminal-step1`);
+  } if (html === '3') {
+    $step2.classList.add(`progressbar-link--active`);
+    $step2Rectangle.classList.add(`rectangle-border--active`);
+    $chapter3.classList.remove(`js-hidden`);
+    $chapter2.classList.remove(`js-hidden`);
+    $step3.classList.add(`progressbar-link--active`);
+    $step3Rectangle.classList.add(`rectangle-border--active`);
+  } if (html === '4') {
+    $chapter3.classList.remove(`js-hidden`);
+    $step3.classList.add(`progressbar-link--active`);
+    $step3Rectangle.classList.add(`rectangle-border--active`);
+    $step4.classList.add(`progressbar-link--active`);
+    $step4Rectangle.classList.add(`rectangle-border--active`);
+    $step2.classList.add(`progressbar-link--active`);
+    $step2Rectangle.classList.add(`rectangle-border--active`);
+    $chapter4.classList.remove(`js-hidden`);
+    $step4.classList.remove(`terminal-step3`);
+    $step4Rectangle.classList.remove(`rect-terminal-step3`);
+
+  }
+
+};
 
 const terminalInteraction = () => {
   const $terminal1 = document.querySelectorAll(`.terminal-buttons-1`);
@@ -28,37 +87,54 @@ const terminalInteraction = () => {
 };
 
 const clickHandlerLastChapter = e => {
+  const $step4 = document.querySelector(`.terminal-step3`);
+  const $step4Rectangle = document.querySelector(`.rect-terminal-step3`);
   const $chapter4 = document.querySelector(`.third-terminal`);
   const html = e.currentTarget.innerText;
   const scrollToChaper3 = document.getElementById('4').scrollIntoView();
   if (html === fristOption) {
     $chapter4.classList.remove(`js-hidden`);
     scrollToChaper3;
+    $step4.classList.add(`progressbar-link--active`);
+    $step4Rectangle.classList.add(`rectangle-border--active`);
+    $step4.classList.remove(`terminal-step3`);
+    $step4Rectangle.classList.remove(`rect-terminal-step3`);
   } if (html === secondOption) {
     console.log(`wait`);
   }
 };
 
 const clickHandlerNextChapter = e => {
+  const $step3 = document.querySelector(`.terminal-step2`);
+  const $step3Rectangle = document.querySelector(`.rect-terminal-step2`);
   const $chapter3 = document.querySelector(`.second-terminal`);
   const html = e.currentTarget.innerText;
   const scrollToChaper3 = document.getElementById('3').scrollIntoView();
   if (html === fristOption) {
     $chapter3.classList.remove(`js-hidden`);
     scrollToChaper3;
+    $step3.classList.add(`progressbar-link--active`);
+    $step3Rectangle.classList.add(`rectangle-border--active`);
+    $step3.classList.remove(`terminal-step2`);
+    $step3Rectangle.classList.remove(`rect-terminal-step2`);
   } if (html === secondOption) {
     console.log(`wait`);
   }
 };
 
 const clickHandler = e => {
-  console.log(e.currentTarget.innerText);
+  const $step2 = document.querySelector(`.terminal-step1`);
+  const $step2Rectangle = document.querySelector(`.rect-terminal-step1`);
   const html = e.currentTarget.innerText;
   const $chapter2 = document.querySelector(`.frist-terminal`);
   const scrollToChaper2 = document.getElementById('2').scrollIntoView();
   if (html === fristOption) {
     $chapter2.classList.remove(`js-hidden`);
     scrollToChaper2;
+    $step2.classList.add(`progressbar-link--active`);
+    $step2Rectangle.classList.add(`rectangle-border--active`);
+    $step2.classList.remove(`terminal-step1`);
+    $step2Rectangle.classList.remove(`rect-terminal-step1`);
   } if (html === secondOption) {
     console.log(`wait`);
   }
@@ -80,10 +156,8 @@ const handleInputs = e => {
 };
 
 const versionsSetter = version => {
-  console.log(version);
   const $changevalue = document.querySelector(`.hidden-js`);
   const $price = document.querySelector(`.price-books-js`);
-  console.log($changevalue.value);
   if (version === 'E-book' && $changevalue.value === '1') {
     $price.textContent = '€1.99';
     $changevalue.value = '31';
@@ -218,6 +292,7 @@ const init = () => {
   optionSwitcher();
   infoButton();
   terminalInteraction();
+  navLeft();
 };
 
 init();

@@ -27,11 +27,11 @@
     <div class="progress-bar">
     <ul class="progressbar">
     <li class="progressbar-progress"> Progress<span>_</span></li>
-    <li class="progressbar-item"><a class="progressbar-link" href="index.php?page=longread#1">1</a> <div class="rectangle-border"></div></li>
-    <li class="progressbar-item"><a class="progressbar-link" href="index.php?page=longread#2">2</a><div class="rectangle-border"></div></li>
-    <li class="progressbar-item"><a class="progressbar-link" href="index.php?page=longread#3">3</a><div class="rectangle-border"></div></li>
-    <li class="progressbar-item"><a class="progressbar-link" href="index.php?page=longread#4">4</a><div class="rectangle-border"></div></li>
-    <li class="progressbar-bookbuyer"> <a class="longread-bookbuyer" href="">Buy the book_</a> </li>
+    <li class="progressbar-item "><a class="progressbar-link progressbar-link--active" href="index.php?page=longread#1">1</a> <div class="rectangle-border rectangle-border--active"></div></li>
+    <li class="progressbar-item"><a class="progressbar-link terminal-step1" href="index.php?page=longread#2">2</a><div class="rectangle-border rect-terminal-step1"></div></li>
+    <li class="progressbar-item"><a class="progressbar-link terminal-step2" href="index.php?page=longread#3">3</a><div class="rectangle-border rect-terminal-step2"></div></li>
+    <li class="progressbar-item"><a class="progressbar-link terminal-step3" href="index.php?page=longread#4">4</a><div class="rectangle-border rect-terminal-step3"></div></li>
+    <li class="progressbar-bookbuyer"> <a class="longread-bookbuyer" href="index.php?page=detail&id=1">Buy the book_</a> </li>
     </ul>
     </div>
     <div class="container-second">
@@ -121,9 +121,9 @@
     <p class="terminal-anim terminal-buttons-1">
     Click me twice to open the file
     </p>
-    <p class="terminal-anim terminal-buttons-1">
+    <a href="index.php?page=detail&id=1" class="terminal-anim terminal-buttons-1">
     Click me to enter the matrix
-    </p>
+</a>
     </div>
     </section>
 
@@ -150,12 +150,12 @@
     </div>
       <div class="container-second">
       <div class="longread--textwrapper">
-        <p>Today’s most famous scifi worlds are created on the cinema screen, or in the virtual realities of video games. There’s a genuine irony that, while Gibson partly created our ideas of cyberspace and virtual reality, the world of the Sprawl has remained a stubbornly linguistic universe. A place we enter through printed words on the page, thanks only to the visionary inventiveness - and technical mastery - of Gibson’s writing.
+        <p>Today’s most famous <span class="scifi">scifi worlds</span>are created on the cinema screen, or in the virtual realities of video games. There’s a genuine irony that, while Gibson partly created our ideas of cyberspace and virtual reality, the world of the Sprawl has remained a stubbornly linguistic universe. A place we enter through printed words on the page, thanks only to the visionary inventiveness - and technical mastery - of Gibson’s writing.
         </p>
         <p>The reason why u should pick up this book and just read are endless. Many films, tv-shows even music is inspired of this book. Maybe it can inspire you to something greater then u ever imagined</p>
-        <p>Lets talk about the characters of this book. The novel begins with Case, a former console Cowboy. He now works as a middelman for smugglers and drugdealers. Case misses his old job but was forced out after stealing from his bosses, who punished him by destroying his nervous system, preventing him form ever jacking into the matrix again.
+        <p>Lets talk about the <span class="chars">characters</span> of this book. The novel begins with Case, a former console Cowboy. He now works as a middelman for smugglers and drugdealers. Case misses his old job but was forced out after stealing from his bosses, who punished him by destroying his nervous system, preventing him form ever jacking into the matrix again.
         </p>
-        <p>Then Molly changes everything. Molly is a razorgirl who works for Armtiage.a mysterious ex-military point man, whose secret and shady employer has tasked him with assembling a team to carry off a series of heists. Armitage promises to restore Case’s nervous system, allowing him to jack into the matrix once again, and Case immediately signs on.</p>
+        <p>Then Molly changes everything. Molly is a razorgirl who works for Armtiage.a <span class="glitch">mysterious</span> ex-military point man, whose secret and shady employer has tasked him with assembling a team to carry off a series of heists. Armitage promises to restore Case’s nervous system, allowing him to jack into the matrix once again, and Case immediately signs on.</p>
       </div>
     </section>
     </div>
@@ -201,9 +201,9 @@
     <p class="terminal-anim terminal-buttons-2">
     Click me twice to open the file
     </p>
-    <p class="terminal-anim terminal-buttons-2">
+    <a href="index.php?page=detail&id=1" class="terminal-anim terminal-buttons-1">
     Click me to enter the matrix
-    </p>
+</a>
     </div>
     </section>
     </div>
@@ -216,8 +216,8 @@
 
       <div class="longread--textwrapper">
       <p>Home was BAMA, the Sprawl, the Boston-Atlanta Metropolitan Axis.Program a map to display frequency of data exchange, every thousand megabytes a single pixel on a very large screen. Manhattan and Atlanta burn solid white. Then they start to pulse, the rate of traffic threatening to overload your simulation. Your map is about to go nova. Cool it down. Up your scale. Each pixel a million megabytes. At a hundred million megabytes per second, you begin to make out certain blocks in midtown Manhattan, outlines of hundred-year-old industrial parks ringing the old core of Atlanta . . .</p>
-      <p>Case woke from a dream of airports, of Molly’s dark leathers moving ahead of him through the concourses of Narita, Schipol, Orly . . . He watched himself buy a flat plastic flask of Danish vodka at some kiosk, an hour before dawn. Somewhere down in the Sprawl’s ferro-concrete roots, a train drove a column of stale air through a tunnel. The train itself was silent, gliding over its induction cushion, but displaced air made the tunnel sing, bass down into subsonics. Vibration reached the room where he lay and caused dust to rise from the cracks in the desiccated parquet floor.</p>
-      <p>Opening his eyes, he saw Molly, naked and just out of reach across an expanse of very new pink temper foam. Overhead, sunlight filtered through the soot-stained grid of a skylight. One half-meter square of glass had been replaced with chip-board, a fat gray cable emerging there to dangle within a few centimeters of the floor. He lay on his side and watched her breathe, her breasts, the sweep of a flank defined with the functional elegance of a war plane’s fuselage. Her body was spare, neat, the muscles like a dancer’s.</p>
+      <p>Case woke from a dream of <span class="glith">airports</span>, of Molly’s dark leathers moving ahead of him through the concourses of Narita, Schipol, Orly . . . He watched himself buy a flat plastic flask of Danish vodka at some kiosk, an hour before dawn. Somewhere down in the Sprawl’s ferro-concrete roots, a train drove a column of stale air through a tunnel. The train itself was silent, gliding over its induction cushion, but displaced air made the tunnel sing, bass down into subsonics. Vibration reached the room where he lay and caused dust to rise from the cracks in the desiccated parquet floor.</p>
+      <p>Opening his eyes, he saw Molly, naked and just out of reach across an expanse of very new pink temper foam. Overhead, sunlight filtered through the soot-stained grid of a <span class="scifi">skylight</span> . One half-meter square of glass had been replaced with chip-board, a fat gray cable emerging there to dangle within a few centimeters of the floor. He lay on his side and watched her breathe, her <span class="breast">breast</span>, the sweep of a flank defined with the functional elegance of a war plane’s fuselage. Her body was spare, neat, the muscles like a dancer’s.</p>
       </div>
       <span class="subtitle-longread subtitle-longread-video">The Safehouse<span class=blink>_</span></span>
       </div>
@@ -232,8 +232,8 @@
     </div>
       <div class="container-second">
       <div class="longread--textwrapper">
-      <p>The room was large. He sat up. The room was empty, aside from the wide pink bedslab and two nylon bags, new and identical, that lay beside it. Blank walls, no windows, a single white-painted steel fire door. The walls were coated with countless layers of white latex paint. Factory space. He knew this kind of room, this kind of building; the tenants would operate in the inter zone where art wasn’t quite crime, crime not quite art. He was home.</p>
-      <p>He swung his feet to the floor. It was made of little blocks of wood, some missing, others loose. His head ached. He remembered Amsterdam, another room, in the Old City section of the Centrum, buildings centuries old. Molly back from the canal’s edge with orange juice and eggs. Armitage off on some cryptic foray, the two of them walking alone past Dam Square to a bar she knew on a Damrak thoroughfare. Paris was a blurred dream. Shopping.</p>
+      <p>The room was <span class="flickering">large</span>. He sat up. The room was empty, aside from the wide pink bedslab and two nylon bags, new and identical, that lay beside it. Blank walls, no windows, a single white-painted steel fire door. The walls were coated with countless layers of white latex paint. Factory space. He knew this kind of room, this kind of building; the tenants would operate in the inter zone where art wasn’t quite crime, crime not quite art. He was home.</p>
+      <p>He swung his feet to the floor. It was made of little blocks of wood, some missing, others loose. His head ached. He remembered Amsterdam, another room, in the Old City section of the Centrum, buildings centuries old. Molly back from the canal’s edge with orange juice and eggs. Armitage off on some <span class="flickering">cryptic</span> foray, the two of them walking alone past Dam Square to a bar she knew on a Damrak thoroughfare. Paris was a blurred dream. Shopping.</p>
       <p>She’d taken him shopping. He stood, pulling on a wrinkled pair of new black jeans that lay at his feet, and knelt beside the bags. The ffirst one he opened was Molly’s: neatly folded clothing and small expensive-looking gadgets. The second was stuffed with things he didn’t remember buying: books, tapes, a Simstim deck, clothing with French and Italian labels. Beneath a green t-shirt, he discovered a flat, origami-wrapped package, recycled Japanese paper.</p>
       </div>
     </section>
@@ -278,9 +278,9 @@
     <p class="terminal-anim terminal-buttons-3">
     Click me twice to open the file
     </p>
-    <p class="terminal-anim terminal-buttons-3">
+    <a href="index.php?page=detail&id=1" class="terminal-anim terminal-buttons-1">
     Click me to enter the matrix
-    </p></div>
+</a></div>
     </section>
     <div class="third-terminal js-hidden">
     <div class="container-second">
@@ -290,11 +290,11 @@
       <p class="purple" >The end thought</p>
       </div>
       <div class="longread--textwrapper">
-      <p>As you can read this the last chapter. This is the end thought about the book: Neromancer. Personally i discoverd more and more about the genre cyberpunk. This is to be honest one of the best genres i know. Its so realstic. Because it can all happen if we are not carefull. These days all companys are getting so much power its insane.
+      <p>As you can read this the <span class="chars">last chapter</span>. This is the end thought about the book: Neuromancer. Personally i discoverd more and more about the genre cyberpunk. This is to be honest one of the best genres i know. Its so realstic. Because it can all happen if we are not carefull. These days all companys are getting so much power its insane.
     </p>
-      <p>In the book the rich live in a big mansion in the sky and the poor live on the soil. This is a little reference to our society. The poor live in suburbs were cirme is an all time high and the rich live in a closed domain were security is 24/7. This book is full of references that we have in this time. </p>
+      <p>In the book the rich live in a big mansion in the sky and the poor live on the soil. This is a little reference to our society. The poor live in suburbs were cirme is an all time high and the rich live in a closed domain were security is 24/7. This book is full of references that we have <span class="shake">in this time</span> . </p>
       <p>The book opens your eyes in every single way. With some fun little fantasy makes this one of the greatest 1984 books in the history. These are not all the chapters form the book i dont want to tell the whole story i want to set you on a journey in the book itself.</p>
-      <p>If you want to buy this book you can buy it on our site form humo.com.</p>
+      <p>If you want to buy this book you can buy it on our site form <a href="index.php?page=detail&id=1" class="bookbuyer"> humo.com.</a></p>
       </div>
 
 
@@ -320,7 +320,7 @@
     </div>
     <div class="longread-footer">
       <div class="logo-longread">
-        <a href="">
+        <a href="index.php">
       <svg height="72" viewBox="0 0 220 72" width="220" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="m0 0h220v72h-220z" fill="#030304"/><path d="m54.8914729 13.632287h-13.6327664v16.8609865h-10.5138427v-16.8609865h-13.7408638v45.5246637h13.6327663v-17.7040359h10.5138428v17.7040359h13.6327663v-45.5246637zm43.8250277 0h-10.7220377v27.926009c0 2.1076233.2081949 4.5313901-1.5614618 6.1121076-1.145072 1.0538116-3.1229232 1.4753323-4.6843854 1.4753323-1.7696567 0-3.8516057-.632287-4.8925803-2.0022421-.8327796-1.3299552-.8327796-3.4775785-.8327796-4.9529148v-28.4529148h-13.9490587v30.0332322c0 5.4798207.8327796 9.6950673 5.6212625 12.9618835 3.4352159 2.3183856 8.744186 3.2668161 12.9080841 3.2668161 4.6843854 0 9.3287708-.7376682 13.2203766-3.8991031 4.2679955-3.5829597 4.8925803-7.7982063 4.8925803-13.0672646zm56.8372094 0h-18.00886l-6.141749 24.132287h-.104098l-6.349944-24.132287h-17.904762v45.5246637h10.305648v-32.4573991h.104097l8.431894 32.5627802h8.640088l8.223299-32.5627802h.104098v32.5627802h12.803986zm28.106312-.632287c-13.632766 0-21.339978 10.0112108-21.339978 23.6053812 0 12.9618834 7.807309 23.2892376 21.339978 23.2892376s21.339978-10.3273542 21.339978-23.2892376c0-13.5941704-7.807309-23.6053812-21.339978-23.6053812zm0 10.3273543c6.037652 0 6.662237 8.8520179 6.662237 13.383408 0 4.426009-.520487 12.8565023-6.662237 12.8565023-6.245847 0-6.662237-8.4304933-6.662237-12.8565023-.104097-4.5313901.520487-13.383408 6.662237-13.383408z" fill="#fff"/></g></svg>
       </a></div>
     </div>
