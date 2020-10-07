@@ -1,5 +1,10 @@
 @media (--small-screen) {
 
+
+  body {
+    overflow-x: hidden;
+  }
+
   .container__header {
     display: flex;
     justify-content: center;
@@ -45,7 +50,6 @@
 
   .footer__wrapper {
     display: flex;
-    min-width: 50rem;
     justify-content: center;
     align-content: center;
   }

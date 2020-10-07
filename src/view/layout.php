@@ -42,7 +42,6 @@
       <li class="menu__item menu__item-big"><a class="menu__link menu__link-big" href="index.php">muziek</a></li>
       <li class="menu__item menu__item-big"><a class="menu__link menu__link-big" href="index.php">boeken</a></li>
       <li class="menu__item menu__item-big active"><a class="menu__link menu__link-big link-active" href="index.php">Shop</a></li>
-      <li class="menu__item menu__item-mobile"><a class="menu__link menu__link-hamburger" href="index.php"><svg height="38" viewBox="0 0 26 21" width="50" xmlns="http://www.w3.org/2000/svg"><g fill="#ee0a0d" fill-rule="evenodd"><rect height="5" rx="2.5" width="26"/><rect height="5" rx="2.5" width="26" y="8"/><rect height="5" rx="2.5" width="26" y="16"/></g></svg> </a></li>
       <li class="menu__item menu__item-big"><a class="menu__link menu__link-big" href="index.php"><svg height="25" viewBox="0 0 25 25" width="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"><circle cx="10.5" cy="10.5" r="8.5"/><path d="m16 16 8 8"/></g></svg> </a></li>
       </ul>
       </nav>
